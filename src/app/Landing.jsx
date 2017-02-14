@@ -5,6 +5,8 @@ import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/Landing.scss';
 import Particles from './Particles.jsx';
 import Scroll from 'react-scroll';
+import Link from 'react-toolbox/lib/link';
+import ScrollLink from './ScrollLink.js';
 class Landing extends React.Component{
 
   render(){
@@ -14,11 +16,14 @@ class Landing extends React.Component{
             <section className={theme.section}>
                 <Row middle="xs">
                   <Col className={theme.maxWidth}>
+                      <h1> </h1>
                       <h1>Hi! I'm Srinjoy</h1>
                       <h1>Welcome to my website</h1>
                   </Col>
                 </Row>
+                <ScrollLink id="about"><Link className={theme.bounce} href="" icon='keyboard_arrow_down' /></ScrollLink>
             </section>
+
         </div>
     </Scroll.Element>
 

@@ -3,7 +3,6 @@ import { Button } from 'react-toolbox/lib/button';
 import { Card} from 'react-toolbox/lib/card';
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/About.scss';
-import Link from 'react-toolbox/lib/link';
 import Container from './Container.js';
 class About extends React.Component{
   render(){
@@ -11,7 +10,7 @@ class About extends React.Component{
       <Container id="about">
             <Card className={theme.cardOv}>
               <h2>Who Am I?</h2>
-              <Row middle="xs">
+              <Row center="xs" middle="xs">
                 <Col lg={4} sm={12}>
                 <img className={theme.img} src={require("../../img/prof.jpg")}/>
                 </Col>
@@ -30,7 +29,6 @@ class About extends React.Component{
               </Col>
               </Row>
             </Card>
-            <Link className={theme.bounce} href="" icon='keyboard_arrow_down' />
             {/* <h1><a><div class="bounce"><i class="fa fa-chevron-down fa-8"></i></div> </a> */}
             {/* </h1> */}
         </Container>

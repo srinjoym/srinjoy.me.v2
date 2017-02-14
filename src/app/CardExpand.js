@@ -4,7 +4,7 @@ import { Card,CardMedia,CardTitle,CardText,CardActions} from 'react-toolbox/lib/
 import {IconButton} from 'react-toolbox/lib/button'
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/CardExpand.scss';
-import Link from 'react-toolbox/lib/link';
+import {Link} from 'react-router';
 class CardExpand extends React.Component{
   constructor(props){
     super(props);
@@ -24,7 +24,7 @@ class CardExpand extends React.Component{
     return(
       <Card onMouseOver={this.inFocus.bind(this)} onMouseOut={this.outFocus.bind(this)} className={theme.card} raised={this.state.focus}>
         <CardMedia aspectRatio='square' image={this.props.image}></CardMedia>
-        <Row className={theme.row}middle="xs">
+        <Row className={theme.row} middle="xs">
           <Col xs={10}>
             <CardTitle className={theme.title} title={this.props.title} subtitle={this.props.subtitle}/>
           </Col>
@@ -37,7 +37,8 @@ class CardExpand extends React.Component{
         }
         {this.props.link != null &&
           <CardActions>
-            <Button label="Learn More" href={this.props.link}/>
+            <Link to={this.props.link}><Button label="Learn More" href={this.props.link}/></Link>
+
           </CardActions>
         }
       </Card>

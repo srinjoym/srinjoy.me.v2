@@ -33,15 +33,15 @@ class GrayAppBar extends React.Component{
         <Container >
             <Row middle="xs">
               <Col xs={2}>
-                <ScrollLink name="SM" id="landing"/>
+                <ScrollLink color={this.state.transparent} name="SM" id="landing"/>
               </Col>
               <Col xs={10}>
                 <Navigation className={theme.nav}>
                   <IconButton onClick={this.displayMenu.bind(this)} icon='menu' neutral mini />
-                  <ScrollLink name="Awards" id="awards"/>
-                  <ScrollLink name="Projects" id="projects"/>
-                  <ScrollLink name="Experience" id="experience"/>
-                  <ScrollLink name="About Me" id="about"/>
+                  <ScrollLink color={this.state.transparent} name="Awards" id="awards"/>
+                  <ScrollLink color={this.state.transparent} name="Projects" id="projects"/>
+                  <ScrollLink color={this.state.transparent} name="Experience" id="experience"/>
+                  <ScrollLink color={this.state.transparent} name="About Me" id="about"/>
                 </Navigation>
               </Col>
             </Row>

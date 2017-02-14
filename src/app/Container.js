@@ -26,7 +26,7 @@ class Container extends React.Component{
     return(
         <Scroll.Element name={this.props.id} className={theme.max_width}>
           <Row center="xs">
-            <Col xs={this.state.width>950? 9:11}>
+            <Col className={theme.col} xs={this.state.width>950? 9:11}>
               {this.props.children}
             </Col>
           </Row>
