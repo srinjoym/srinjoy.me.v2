@@ -1,4 +1,13 @@
 const projects = [
+   {
+      'id': 'viewpointsel',
+      'title': 'Viewpoint Selection for Failure Detection',
+      'subtitle': 'AI Research Paper',
+      'image': 'gemini.jpg',
+      'text': 'Developed scripts in ROS using Python to maneuver humanoid robot to assemble IKEA table, and capture images at various viewpoints for data. Detected failures in robotics domains such as furniture assembly and surveillance tasks, paper presented at IROS 2017',
+      'link':'https://drive.google.com/file/d/0B3RGMraz9IZlbzIxYnNqU2N3REE/view?usp=sharing',
+      'ext': true
+   },
   {
     'id': 'rob_gripper',
     'title': 'Robot Gripper',
@@ -45,7 +54,8 @@ const projects = [
     'subtitle': 'Botworks',
     'image': '4591147_orig_card.png',
     'text': 'The Recall Notification System started out as our project for First Lego League: Food Factor. This product was created to reduce the time it takes for notifications of recalls to reach the consumer. Using the app or a barcode scanner, consumers could input their receipt. The app would then continually check with recall databases from FDA and CDC and immediately alert the consumer if their product was recalled.',
-    'link':'http://www.botworks.co.nr'
+    'link':'http://www.botworks.co.nr',
+    'ext':true
   },
 ];
 

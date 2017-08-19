@@ -9,6 +9,8 @@ import IconButton from 'react-toolbox/lib/button';
 import Container from './Container.js';
 import Logo from './Logo.js';
 import Dialog from 'react-toolbox/lib/dialog';
+
+
 class GrayAppBar extends React.Component{
   constructor(props){
     super(props);
@@ -33,15 +35,16 @@ class GrayAppBar extends React.Component{
         <Container >
             <Row middle="xs">
               <Col xs={2}>
-                <ScrollLink color={this.state.transparent} name="SM" id="landing"/>
+                <ScrollLink path={this.props.path} color={this.state.transparent} id="landing"><Logo transparent={this.state.transparent}/></ScrollLink>
               </Col>
               <Col xs={10}>
                 <Navigation className={theme.nav}>
-                  <IconButton onClick={this.displayMenu.bind(this)} icon='menu' neutral mini />
-                  <ScrollLink color={this.state.transparent} name="Awards" id="awards"/>
-                  <ScrollLink color={this.state.transparent} name="Projects" id="projects"/>
-                  <ScrollLink color={this.state.transparent} name="Experience" id="experience"/>
-                  <ScrollLink color={this.state.transparent} name="About Me" id="about"/>
+                  <IconButton onClick={this.displayMenu.bind(this)} className={this.state.transparent? theme.black:theme.white} icon='menu' mini />
+                  <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlbXZIWDBheW1reXM/view?usp=sharing" color={this.state.transparent} name="Resume" id="res" link={true}/>
+                  <ScrollLink path={this.props.path}  color={this.state.transparent} name="Awards" id="awards"/>
+                  <ScrollLink path={this.props.path} color={this.state.transparent} name="Projects" id="projects"/>
+                  <ScrollLink path={this.props.path}  color={this.state.transparent} name="Experience" id="experience"/>
+                  <ScrollLink path={this.props.path}  color={this.state.transparent} name="About Me" id="about"/>
                 </Navigation>
               </Col>
             </Row>
@@ -55,10 +58,11 @@ class GrayAppBar extends React.Component{
           <h4>Menu</h4>
           {/* <IconButton onClick={this.displayMenu.bind(this)} icon={'close'} accent /> */}
           <Navigation type='vertical'>
-            <ScrollLink name="Awards" id="awards"/>
-            <ScrollLink name="Projects" id="projects"/>
-            <ScrollLink name="Experience" id="experience"/>
-            <ScrollLink name="About Me" id="about"/>
+            <ScrollLink path={this.props.path} color={true} name="About Me" id="about"/>
+            <ScrollLink path={this.props.path} color={true} name="Experience" id="experience"/>
+            <ScrollLink path={this.props.path} color={true} name="Projects" id="projects"/>
+            <ScrollLink path={this.props.path} color={true} name="Awards" id="awards"/>
+            <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlbXZIWDBheW1reXM/view?usp=sharing" color={true} name="Resume" id="res" link={true}/>
           </Navigation>
         </Dialog>
       </AppBar>

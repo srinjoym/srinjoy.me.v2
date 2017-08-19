@@ -24,14 +24,18 @@ class Container extends React.Component{
   }
   render(){
     return(
-        <Scroll.Element name={this.props.id} className={theme.max_width}>
+      <div className={theme.max_width}>
+      {this.props.anchor&& <a className={theme.anchor} id={this.props.id}/>}
           <Row center="xs">
             <Col className={theme.col} xs={this.state.width>950? 9:11}>
               {this.props.children}
             </Col>
           </Row>
-        </Scroll.Element>
+      </div>
     );
   }
 }
+Container.defaultProps = {
+    anchor:true
+};
 export default Container;

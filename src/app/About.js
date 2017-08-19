@@ -7,6 +7,7 @@ import Container from './Container.js';
 class About extends React.Component{
   render(){
     return(
+      <div className={theme.bg}>
       <Container id="about">
             <Card className={theme.cardOv}>
               <h2>Who Am I?</h2>
@@ -16,7 +17,7 @@ class About extends React.Component{
                 </Col>
               <Col lg={8} sm={12}>
                 <p className={theme.p}>
-                  Srinjoy is a freshman at the University of Texas at Austin studying
+                  Srinjoy is a sophomore at the University of Texas at Austin studying
                   Electrical and Computer Engineering. He loves technology and hopes
                   to work with robots in his career. In High School, he was the President
                   of Lynbrook Robotics where he built and competed with technically
@@ -32,6 +33,7 @@ class About extends React.Component{
             {/* <h1><a><div class="bounce"><i class="fa fa-chevron-down fa-8"></i></div> </a> */}
             {/* </h1> */}
         </Container>
+      </div>
     );
   }
 }

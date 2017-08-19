@@ -11,6 +11,7 @@
 }
 .card{
   margin: 0 0 1em 0;
+
 }
 .icon{
   >button{
@@ -26,4 +27,12 @@
   h5{
     font-weight: 600 !important;
   }
+}
+hr.line{
+  display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 3px solid #24b47e;
+    margin: 0;
+    padding: 0;
 }

@@ -29,7 +29,7 @@ class CardExpand extends React.Component{
             <CardTitle className={theme.title} title={this.props.title} subtitle={this.props.subtitle}/>
           </Col>
           <Col className={theme.icon} xs={2}>
-            <IconButton onClick={this.toggleExpandState.bind(this)} icon={this.state.expanded? 'keyboard_arrow_up':'keyboard_arrow_down'} accent />
+            <IconButton onClick={this.toggleExpandState.bind(this)} icon={this.state.expanded? 'keyboard_arrow_up':'keyboard_arrow_down'} primary />
           </Col>
         </Row>
         {this.state.expanded &&
@@ -37,12 +37,17 @@ class CardExpand extends React.Component{
         }
         {this.props.link != null &&
           <CardActions>
-            <Link to={this.props.link}><Button label="Learn More" href={this.props.link}/></Link>
-
+            {this.props.ext? <Button label="Learn More" href={this.props.link}/>:<Link to={this.props.link}><Button label="Learn More" /></Link>}
           </CardActions>
         }
+        <hr className={theme.line}/>
       </Card>
     );
   }
 }
+
+CardExpand.defaultProps = {
+    ext:false
+};
+
 export default CardExpand;

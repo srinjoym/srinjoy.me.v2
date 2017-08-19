@@ -94,7 +94,7 @@ class MonkeyPython extends React.Component{
       </ul>
                 </Col>
                 <Col xs={12} md={6}>
-                  <img className={theme.img_width} src={require("../../img/mpaward.jpg")}/>
+                  <img className={theme.img_width} src={require("../../img/svr2015team.jpg")}/>
                 </Col>
               </Row>
             </Card>

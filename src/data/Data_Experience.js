@@ -1,14 +1,21 @@
 const experience = [
+   {
+      'id': 'sw_intern_datos',
+      'title': 'Software Developer Intern',
+      'subtitle': 'Datos IO',
+      'image': 'datos.jpg',
+      'text': 'Designed and developed backup solution in Python for petabyte scale Hadoop clusters, took project from inception to POC ready.Primary contributor to UI design and fixes in Angular JS for RecoverX 2.0 product.'
+   },
   {
     'id': 'ug_researcher',
-    'title': 'Undergrad Researcher',
+    'title': 'Undergraduate Researcher',
     'subtitle': 'PeARL Lab',
     'image': 'Pearl_card.png',
     'text': 'Working under Scott Niekum to program robots in UT Austin Computer Science Artificial Intelligence Lab. Using ROS and Python to program 6DOF Jaco Arm to collect various data sets for machine learning research.'
   },
   {
-    'id': 'sw_intern',
-    'title': 'Software Intern',
+    'id': 'sw_intern_atsa',
+    'title': 'Software Developer Intern',
     'subtitle': 'ATSA Corp',
     'image': 'imac_card.png',
     'text': 'Developing Litol (Learn-It-Online) a web application written in Ruby on Rails that allows anyone to easily create a course and publish it online. Catered towards businesses who want to create custom courses for employee training and certification. Working to create custom courses for several clients right now.'

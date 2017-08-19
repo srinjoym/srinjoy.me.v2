@@ -3,14 +3,15 @@ import React from 'react';
 import GrayAppBar from './GrayAppBar.js';
 import '../css/App.scss';
 import theme from '../css/App.scss';
-
+import Footer from './Footer.js';
 class App extends React.Component{
 
   render(){
     return(
     <div className={theme.div}>
-      <GrayAppBar/>
+      <GrayAppBar path={this.props.location.pathname}/>
       {this.props.children}
+      <Footer/>
     </div>
     );
   }

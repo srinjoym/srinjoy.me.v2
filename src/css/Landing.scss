@@ -1,4 +1,5 @@
 .section{
+  position: relative;
   > div{
     min-height: 100vh;
   }
@@ -7,16 +8,40 @@
   // background: #24C6DC; /* fallback for old browsers */
   // background: -webkit-linear-gradient(to left, #24C6DC , #514A9D); /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to left, #24C6DC , #514A9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
+  //background-image: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
 }
 .maxWidth{
   width: 100%;
-  >h1{
-    text-align: center;
-    font-size: 9rem;
-    color: white;
-    font-weight: 500;
+
+}
+.h1{
+  text-align: center;
+  font-size: 9rem;
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 850px) {
+
+  .h1{
+    font-size: 7rem;
+
   }
+}
+
+
+.particles{
+  >canvas{
+    background-image: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:0;
+  }
+
+
 }
 .bounce {
   >span{
@@ -24,6 +49,8 @@
     color: white;
     position: absolute;
     top:-100px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
     margin: auto;
     font-size: 5.3em;

@@ -46,13 +46,12 @@ class MonkeyPython extends React.Component{
                   </ul>
                 </Col>
                 <Col xs={12} md={6}>
-                  <img className={theme.max_width} src={require("../../img/mp_close.JPG")}></img>
+                  <img className={theme.max_width} src={require("../../img/mp_close.jpg")}></img>
                 </Col>
               </Row>
             </Card>
             <Card className={theme.card}>
               <h2>Design Highlights</h2>
-              <p>As a junior, I was in charge of the elevator subsystem on the robot, which consisted of the upper structure, chains, lifting gearbox and counterbalancing. Even though I had used Autodesk Inventor in the past for modeling the control system last year, this was my first project with full subsystem design. Before the season started, I went to the Advanced Design Lectures held by our team mentors, to learn about the math, physics and design behind our robots. This lectures helped me prepare for my job during build season as I had learned the process already. I also held workshops of my own, teaching rookie members about the electronics subsystem and more advanced tools such as an oscilloscope over several sessions.</p>
               <img className={theme.img_width} src={require("../../img/intake.jpg")}/>
               <p>I considered intaking the boulders both over and through the front bumpers. After analyzing the geometry for both systems, I realized that an over-the-bumper intake would not have a position extending under 15 inches outside the robot, thus not meeting our first requirement. However, the through bumper design required us to split our drivetrain frame, making it weaker. So I combined the two designs and decided to intake over our frame while still splitting the bumpers. As a result, I maintained a position under 15 inches and a rigid drive base.</p>
               <img className={theme.img_width} src={require("../../img/bumper.png")}></img>
