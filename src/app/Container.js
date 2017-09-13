@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/Container.scss';
-import Scroll from 'react-scroll';
 class Container extends React.Component{
   constructor(props) {
     super(props);

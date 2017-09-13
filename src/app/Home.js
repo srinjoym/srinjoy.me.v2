@@ -13,13 +13,9 @@ class Home extends React.Component{
     return(
       <div>
         <Landing/>
-        <br/>
         <About/>
-        <br/>
         <Experience/>
-        <br/>
         <Projects/>
-        <br/>
         <Awards/>
       </div>
       );

@@ -86,6 +86,7 @@
   "dependencies": {
     "history": "^4.5.1",
     "react-fontawesome": "^1.5.0",
+    "react-ga": "^2.2.0",
     "react-icons": "^2.2.3",
     "react-masonry-component": "^5.0.3",
     "react-scrollchor": "^2.2.0",

@@ -17,15 +17,12 @@ class About extends React.Component{
                 </Col>
               <Col lg={8} sm={12}>
                 <p className={theme.p}>
-                  Srinjoy is a sophomore at the University of Texas at Austin studying
-                  Electrical and Computer Engineering. He loves technology and hopes
-                  to work with robots in his career. In High School, he was the President
-                  of Lynbrook Robotics where he built and competed with technically
-                  advanced FRC robots every year. He grew up in San Jose, California
-                  where he was (and still is!) a huge fan of the Golden State Warriors
-                  and the 49ers. Most recently, he spent his summer working at ATSA
-                  Corp, where he built a web app that allows anyone to create and
-                  learn from custom online courses.
+                  Srinjoy is a second-year student at the University of Texas at Austin studying Electrical and Computer
+                  Engineering. He is a research assistant under Prof. Scott Niekum in the Personal Autonomous Robotics
+                  Lab at UT Austin, where he works on Deep Learning projects and programs robots for Human Robot Interaction tasks.
+                  He is also working as a Software Engineering Intern at Datos IO, where he works on cloud data
+                  protection at scale for big data filesystems like Hadoop. He grew up in San Jose, California where he was (and still is!)
+                  a huge fan of the Golden State Warriors and the 49ers.
                 </p>
               </Col>
               </Row>

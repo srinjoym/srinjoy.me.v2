@@ -40,7 +40,7 @@ class GrayAppBar extends React.Component{
               <Col xs={10}>
                 <Navigation className={theme.nav}>
                   <IconButton onClick={this.displayMenu.bind(this)} className={this.state.transparent? theme.black:theme.white} icon='menu' mini />
-                  <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlbXZIWDBheW1reXM/view?usp=sharing" color={this.state.transparent} name="Resume" id="res" link={true}/>
+                  <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing" color={this.state.transparent} name="Resume" id="res" link={true}/>
                   <ScrollLink path={this.props.path}  color={this.state.transparent} name="Awards" id="awards"/>
                   <ScrollLink path={this.props.path} color={this.state.transparent} name="Projects" id="projects"/>
                   <ScrollLink path={this.props.path}  color={this.state.transparent} name="Experience" id="experience"/>
@@ -62,7 +62,7 @@ class GrayAppBar extends React.Component{
             <ScrollLink path={this.props.path} color={true} name="Experience" id="experience"/>
             <ScrollLink path={this.props.path} color={true} name="Projects" id="projects"/>
             <ScrollLink path={this.props.path} color={true} name="Awards" id="awards"/>
-            <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlbXZIWDBheW1reXM/view?usp=sharing" color={true} name="Resume" id="res" link={true}/>
+            <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing" color={true} name="Resume" id="res" link={true}/>
           </Navigation>
         </Dialog>
       </AppBar>

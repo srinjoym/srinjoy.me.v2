@@ -11,7 +11,10 @@
 }
 .card{
   margin: 0 0 1em 0;
-
+  transition: box-shadow .3s;
+  &:hover{
+    box-shadow: 0 0 20px rgba(33,33,33,.5);
+  }
 }
 .icon{
   >button{
@@ -27,6 +30,7 @@
   h5{
     font-weight: 600 !important;
   }
+  height: 90px;
 }
 hr.line{
   display: block;

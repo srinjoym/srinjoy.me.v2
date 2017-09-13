@@ -9,9 +9,16 @@ class CardLayout extends React.Component{
         <div>
             <Row className={theme.row}>
             {this.props.data.map(expData => {
-            return <Col key = {expData.id} xs={12} sm={6} md={6} lg={4}>
-              <CardExpand image={require('../../img/'+expData.image)} title={expData.title} subtitle={expData.subtitle} text={expData.text} link={expData.link} ext={expData.ext}/>
-            </Col>;
+            if(expData.lg_size){
+               return <Col key = {expData.id} xs={12} sm={expData.sm_size} md={expData.sm_size} lg={expData.lg_size}>
+                  <CardExpand image={require('../../img/'+expData.image)} title={expData.title} wide={true} subtitle={expData.subtitle} text={expData.text} link={expData.link} ext={expData.ext}/>
+               </Col>;
+            }else{
+               return <Col key = {expData.id} xs={12} sm={6} md={6} lg={4}>
+                  <CardExpand image={require('../../img/'+expData.image)} title={expData.title} subtitle={expData.subtitle} text={expData.text} link={expData.link} ext={expData.ext}/>
+               </Col>;
+            }
+
             })}
             </Row>
         </div>

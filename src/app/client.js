@@ -8,9 +8,13 @@ import JunkyMonkey from './JunkyMonkey.js';
 import FunkCannon from './FunkCannon.js';
 import Ufo from './Ufo.js';
 import SoftRobot from './SoftRobot.js';
+import ReactGA from 'react-ga';
 import { applyRouterMiddleware,IndexRoute,Router, Route, browserHistory } from 'react-router';
 import { useScroll } from 'react-router-scroll';
 // import useScroll from 'scroll-behavior/lib/useStandardScroll';
+
+ReactGA.initialize('UA-56121800-2');
+
 function hashLinkScroll() {
   const { hash } = window.location;
   if (hash !== '') {
@@ -23,6 +27,8 @@ function hashLinkScroll() {
       if (element) element.scrollIntoView();
     }, 0);
   }
+  ReactGA.set({ page: window.location.pathname + window.location.search });
+  ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
 

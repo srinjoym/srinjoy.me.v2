@@ -13,17 +13,11 @@ class CardExpand extends React.Component{
   toggleExpandState(){
     this.setState({expanded:!this.state.expanded});
   }
-  inFocus(){
-    this.setState({focus:true});
-  }
-  outFocus(){
-    this.setState({focus:false});
-  }
   render(){
 
     return(
-      <Card onMouseOver={this.inFocus.bind(this)} onMouseOut={this.outFocus.bind(this)} className={theme.card} raised={this.state.focus}>
-        <CardMedia aspectRatio='square' image={this.props.image}></CardMedia>
+      <Card className={theme.card}>
+        <CardMedia aspectRatio={this.props.wide ? 'wide':'square'} image={this.props.image}></CardMedia>
         <Row className={theme.row} middle="xs">
           <Col xs={10}>
             <CardTitle className={theme.title} title={this.props.title} subtitle={this.props.subtitle}/>

@@ -6,13 +6,13 @@ const projects = [
       'image': 'gemini.jpg',
       'text': 'Developed scripts in ROS using Python to maneuver humanoid robot to assemble IKEA table, and capture images at various viewpoints for data. Detected failures in robotics domains such as furniture assembly and surveillance tasks, paper presented at IROS 2017',
       'link':'https://drive.google.com/file/d/0B3RGMraz9IZlbzIxYnNqU2N3REE/view?usp=sharing',
-      'ext': true
+      'ext': true,
    },
   {
     'id': 'rob_gripper',
     'title': 'Robot Gripper',
     'subtitle': 'Personal',
-    'image': 'softrobot_card.png',
+    'image': 'base_card.png',
     'text': 'I designed my own Soft Robotic Gripper this past summer to explore safer and more reliable ways of making robots. I modeled the gripper mold and made it using EcoFlex. It can pick up an object in any orientation as it conforms to the object’s shape while maintaining a constant grip.I 3D printed most of the arm including the molds for the gripper and the base.',
     'link':'softrobot'
   },

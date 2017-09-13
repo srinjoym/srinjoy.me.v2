@@ -14,6 +14,7 @@ class Experience extends React.Component{
         <div className={theme.bg}>
           <Container id='experience'>
               <h2>Experience</h2>
+              <br/>
               <CardLayout data={experience}/>
           </Container>
         </div>
