@@ -75,12 +75,17 @@
     "style-loader": "~0.13.1",
     "webpack": "~1.13.2",
     "webpack-dev-middleware": "~1.6.1",
-    "webpack-hot-middleware": "~2.12.2"
+    "webpack-hot-middleware": "~2.12.2",
+    "git-scripts": "0.2.1",
+    "surge":"latest"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config",
-    "deploy": "gh-pages -d build",
+    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
     "start": "node server"
+  },
+  "git":{
+    "pre-push": "npm build && npm deploy"
   },
   "license": "MIT",
   "dependencies": {
