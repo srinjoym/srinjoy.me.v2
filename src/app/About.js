@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
-import { Button } from 'react-toolbox/lib/button';
 import { Card} from 'react-toolbox/lib/card';
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/About.scss';
 import Container from './Container.js';
+
+//About component on home page
 class About extends React.Component{
   render(){
     return(
@@ -27,8 +28,6 @@ class About extends React.Component{
               </Col>
               </Row>
             </Card>
-            {/* <h1><a><div class="bounce"><i class="fa fa-chevron-down fa-8"></i></div> </a> */}
-            {/* </h1> */}
         </Container>
       </div>
     );

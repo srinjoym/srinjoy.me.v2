@@ -7,6 +7,8 @@ import Link from 'react-toolbox/lib/link';
 import CardLayout from './CardLayout.js';
 import projects from '../data/Data_Projects.js';
 import Container from './Container.js';
+
+//Renders card layout with projects data
 class Projects extends React.Component{
   render(){
     return(

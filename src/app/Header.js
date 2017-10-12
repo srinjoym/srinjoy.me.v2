@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import AppBar from 'react-toolbox/lib/app_bar';
 import theme from '../css/GrayAppBar.scss';
-import { Grid,Row,Col } from 'react-flexbox-grid/lib/index';
+import { Row,Col } from 'react-flexbox-grid/lib/index';
 import Navigation from 'react-toolbox/lib/navigation';
 import Waypoint from 'react-waypoint';
 import ScrollLink from './ScrollLink.js';
@@ -11,7 +11,7 @@ import Logo from './Logo.js';
 import Dialog from 'react-toolbox/lib/dialog';
 
 
-class GrayAppBar extends React.Component{
+class Header extends React.Component{
   constructor(props){
     super(props);
     // var scroll_top = $(window).scrollTop();
@@ -53,10 +53,10 @@ class GrayAppBar extends React.Component{
           active={this.state.active}
           onEscKeyDown={this.displayMenu}
           onOverlayClick={this.displayMenu}
-          type='small'
-        >
+          type='small'>
+
           <h4>Menu</h4>
-          {/* <IconButton onClick={this.displayMenu.bind(this)} icon={'close'} accent /> */}
+          <IconButton onClick={this.displayMenu.bind(this)} icon={'close'} accent />
           <Navigation type='vertical'>
             <ScrollLink path={this.props.path} color={true} name="About Me" id="about"/>
             <ScrollLink path={this.props.path} color={true} name="Experience" id="experience"/>
@@ -71,8 +71,8 @@ class GrayAppBar extends React.Component{
   }
 }
 
-GrayAppBar.propTypes = {
+Header.propTypes = {
   children: PropTypes.node
 };
 
-export default GrayAppBar;
+export default Header;

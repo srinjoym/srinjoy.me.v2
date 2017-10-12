@@ -3,6 +3,7 @@ import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/CardLayout.scss';
 import CardExpand from './CardExpand.js';
 
+//Renders group of cards with data from props, can specify card size from data
 class CardLayout extends React.Component{
   render(){
     return(
@@ -18,7 +19,6 @@ class CardLayout extends React.Component{
                   <CardExpand image={require('../../img/'+expData.image)} title={expData.title} subtitle={expData.subtitle} text={expData.text} link={expData.link} ext={expData.ext}/>
                </Col>;
             }
-
             })}
             </Row>
         </div>

@@ -8,6 +8,7 @@ import CardLayout from './CardLayout.js';
 import experience from '../data/Data_Experience.js';
 import Container from './Container.js';
 
+//Renders card layout with data from experience
 class Experience extends React.Component{
   render(){
     return(

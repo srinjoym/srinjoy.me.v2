@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react';
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/Container.scss';
+
+//General container class for layouts with anchors for scrolling
 class Container extends React.Component{
   constructor(props) {
     super(props);
-    this.handleWidth = 100;
     this.state = { height: '0px' };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }

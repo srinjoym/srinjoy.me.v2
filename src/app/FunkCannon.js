@@ -1,16 +1,12 @@
 import React, { PropTypes } from 'react';
-import { Button } from 'react-toolbox/lib/button';
 import { Layout } from 'react-toolbox';
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/Robot.scss';
-import Particles from './Particles.jsx';
-import Scroll from 'react-scroll';
-import Link from 'react-toolbox/lib/link';
 import Card from 'react-toolbox/lib/card';
 import Container from './Container';
-import { List, ListItem} from 'react-toolbox/lib/list';
-class FunkCannon extends React.Component{
 
+//Page with details for FunkCannon, TODO abstract out to data, and move to modals
+class FunkCannon extends React.Component{
   render(){
     return(
       <div>
@@ -37,7 +33,6 @@ class FunkCannon extends React.Component{
             <li>Collector to suck balls in from ground</li>
             <li>Shooter consists of two large springs allowing for shooting anywhere in the goal zone</li>
             <li>During the autonomous period, the Funk Cannon is capable of rapidly shooting two balls within 8 seconds, scoring 45 points by itself.</li>
-
           </ul>
                 </Col>
                 <Col xs={12} md={6}>

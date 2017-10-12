@@ -11,7 +11,6 @@ import SoftRobot from './SoftRobot.js';
 import ReactGA from 'react-ga';
 import { applyRouterMiddleware,IndexRoute,Router, Route, browserHistory } from 'react-router';
 import { useScroll } from 'react-router-scroll';
-// import useScroll from 'scroll-behavior/lib/useStandardScroll';
 
 ReactGA.initialize('UA-56121800-2');
 
@@ -31,7 +30,7 @@ function hashLinkScroll() {
   ReactGA.pageview(window.location.pathname + window.location.search);
 }
 
-
+//All routes go through here, using React Router for client side routing
 ReactDOM.render(
   <Router history={browserHistory}  onUpdate={hashLinkScroll} render={applyRouterMiddleware(useScroll())}>
   <Route path='/' component={App}>

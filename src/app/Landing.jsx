@@ -1,15 +1,13 @@
 import React, { PropTypes } from 'react';
-import { Button } from 'react-toolbox/lib/button';
 import { Layout } from 'react-toolbox';
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/Landing.scss';
 import ReactGA from 'react-ga';
-import Scroll from 'react-scroll';
 import Link from 'react-toolbox/lib/link';
 import ScrollLink from './ScrollLink.js';
-import CustomParticles from './CustomParticles';
 import ReactDipper from 'react-dipper';
 
+//Landing page with react dipper background
 class Landing extends React.Component{
      recordScroll(){
         ReactGA.event({
@@ -35,10 +33,7 @@ class Landing extends React.Component{
                    </Row>
                    <ScrollLink onClick={this.recordScroll.bind(this)} path="/" id="about"><Link className={theme.bounce} href="" icon='keyboard_arrow_down' /></ScrollLink>
                </section>
-
            </div>
-
-
        );
      }
 }

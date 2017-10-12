@@ -7,6 +7,8 @@ import Link from 'react-toolbox/lib/link';
 import CardLayout from './CardLayout.js';
 import awards from '../data/Data_Awards.js';
 import Container from './Container.js';
+
+//Renders card layout with data
 class Awards extends React.Component{
   render(){
     return(
