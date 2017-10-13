@@ -75,7 +75,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config",
-    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
+    "deploy": "mv ./build/index.html ./build/200.html && surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
     "start": "node server",
     "test": "jest"
   },
