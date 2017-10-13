@@ -44,7 +44,7 @@ const projects = [
     'id': 'ufo',
     'title': 'Ultimate Funky Object',
     'subtitle': 'Lynbrook Robotics',
-    'image': 'UFO_card.png',
+    'image': 'ufo_card.png',
     'text': 'Ultimate Funky Object was the 2013 robot for Lynbrook Robotics. The robots purpose was to shoot frisbees into high goals and climb a three runged pyramid at the end for bonus points. As a freshman on the team, I was heavily involved with the electrical subsystem of the robot. This robot was very successful, winning the Engineering Inspiration award at Boston qualifying it for World Championships!',
     'link':'ufo'
   },

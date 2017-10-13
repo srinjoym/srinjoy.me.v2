@@ -1,5 +1,5 @@
 import React from 'react';
-import GrayAppBar from './Header.js';
+import Header from './Header.js';
 import '../css/App.scss';
 import theme from '../css/App.scss';
 import Footer from './Footer.js';
