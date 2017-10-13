@@ -1,14 +1,9 @@
 import React, { PropTypes } from 'react';
-import { Button } from 'react-toolbox/lib/button';
 import { Layout } from 'react-toolbox';
 import { Row,Col } from 'react-flexbox-grid/lib/';
 import theme from '../css/Robot.scss';
-import Particles from './Particles.jsx';
-import Scroll from 'react-scroll';
-import Link from 'react-toolbox/lib/link';
 import Card from 'react-toolbox/lib/card';
 import Container from './Container';
-import { List, ListItem} from 'react-toolbox/lib/list';
 class SoftRobot extends React.Component{
 
   render(){
