@@ -43,6 +43,7 @@
     "gh-pages": "^0.12.0",
     "git-scripts": "0.2.1",
     "history": "^3.0.0",
+    "html-webpack-plugin": "^2.30.1",
     "internal-ip": "~1.2.0",
     "jest": "^21.2.1",
     "json-loader": "^0.5.7",
@@ -75,7 +76,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config",
-    "deploy": "mv ./build/index.html ./build/200.html && surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
+    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
     "start": "node server",
     "test": "jest"
   },

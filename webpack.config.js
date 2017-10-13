@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: __dirname,
@@ -48,6 +49,10 @@ module.exports = {
     includePaths: [path.resolve(__dirname, './src/app')]
   },
   plugins: [
+    new HtmlWebpackPlugin({
+       filename: '200.html',
+       template: './src/www/index.html'
+    }),
     new ExtractTextPlugin('bundle.css', { allChunks: true }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
