@@ -6,6 +6,7 @@ import ReactGA from 'react-ga';
 import Link from 'react-toolbox/lib/link';
 import ScrollLink from './ScrollLink.js';
 import ReactDipper from 'react-dipper';
+import dipper_config from './dipper_config.json';
 
 //Landing page with react dipper background
 class Landing extends React.Component{
@@ -21,7 +22,7 @@ class Landing extends React.Component{
 
            <div className={theme.bg}>
              <div className={theme.particles}>
-               <ReactDipper />
+               <ReactDipper styleParams={dipper_config}/>
              </div>
              <a id="landing"/>
                <section className={theme.section}>
