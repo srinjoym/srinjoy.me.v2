@@ -56,12 +56,11 @@ class Header extends React.Component{
           type='small'>
 
           <h4>Menu</h4>
-          <IconButton onClick={this.displayMenu.bind(this)} icon={'close'} accent />
           <Navigation type='vertical'>
-            <ScrollLink path={this.props.path} color={true} name="About Me" id="about"/>
-            <ScrollLink path={this.props.path} color={true} name="Experience" id="experience"/>
-            <ScrollLink path={this.props.path} color={true} name="Projects" id="projects"/>
-            <ScrollLink path={this.props.path} color={true} name="Awards" id="awards"/>
+            <ScrollLink path={this.props.path} color={true} name="About Me" id="about" onClick={this.displayMenu.bind(this)}/>
+            <ScrollLink path={this.props.path} color={true} name="Experience" id="experience" onClick={this.displayMenu.bind(this)}/>
+            <ScrollLink path={this.props.path} color={true} name="Projects" id="projects" onClick={this.displayMenu.bind(this)}/>
+            <ScrollLink path={this.props.path} color={true} name="Awards" id="awards" onClick={this.displayMenu.bind(this)}/>
             <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing" color={true} name="Resume" id="res" link={true}/>
           </Navigation>
         </Dialog>

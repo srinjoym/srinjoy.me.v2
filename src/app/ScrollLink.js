@@ -9,12 +9,12 @@ class ScrollLink extends React.Component{
 
   render(){
     return(
-      <Toolbox_Link href={this.props.link? this.props.path:""}className={this.props.color? theme.b_link:theme.w_link}>
+      <Toolbox_Link href={this.props.link? this.props.path:""} className={this.props.color? theme.b_link:theme.w_link}>
         {!this.props.link&&(this.props.path=="/"?
-        <Scrollchor to={"#"+this.props.id} animate={{ duration: 1000}} >
+        <Scrollchor afterAnimate={this.props.onClick} to={"#"+this.props.id} animate={{ duration: 400}} >
           {this.props.name}
           {this.props.children}
-        </Scrollchor>:<Link to={"/#"+this.props.id}>{this.props.name}{this.props.children}</Link>)}
+        </Scrollchor>:<Link onClick={this.props.onClick} to={"/#"+this.props.id}>{this.props.name}{this.props.children}</Link>)}
         {this.props.link&&<a>{this.props.name}</a>}
       </Toolbox_Link>
     );
