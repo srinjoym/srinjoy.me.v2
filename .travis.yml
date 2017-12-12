@@ -11,7 +11,11 @@ deploy:
     skip_cleanup: true
     project: ./build/
     domain: www.srinjoy.me
+    on:
+	branch: master
   - provider: surge
     skip_cleanup: true
     project: ./build/
     domain: srinjoy.me
+    on:
+	branch: master
