@@ -36,8 +36,7 @@ class CardExpand extends React.Component{
      render(){
 
        return(
-         <Card key={this.props.key} onClick={this.toggleExpandState.bind(this)} className={theme.card}>
-
+         <Card onClick={this.toggleExpandState.bind(this)} className={theme.card}>
            <CardMedia aspectRatio={this.props.wide ? 'wide':'square'} image={this.props.image}></CardMedia>
            <Row className={theme.row} middle="xs">
              <Col xs={10}>
