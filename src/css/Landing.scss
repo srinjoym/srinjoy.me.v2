@@ -1,34 +1,62 @@
+@import "~react-toolbox/lib/globals";
+
 .section{
   position: relative;
   > div{
     min-height: 100vh;
   }
 }
-.bg{
-  // background: #24C6DC; /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to left, #24C6DC , #514A9D); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to left, #24C6DC , #514A9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  //background-image: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
-}
+
 .maxWidth{
   width: 100%;
-
+  text-align: center;
 }
+
 .h1{
   text-align: center;
   font-size: 9rem;
   color: white;
   font-weight: 500;
 }
+.h2{
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  font-weight: 500;
+}
 
-@media (max-width: 850px) {
-
+@media (max-width: $layout-breakpoint-sm) {
   .h1{
     font-size: 7rem;
-
+  }
+  .h2{
+    font-size:4rem;
+  }
+}
+@media (max-width: $layout-breakpoint-xs){
+  .h1{
+    font-size: 5rem;
+  }
+  .h2{
+    font-size:3rem;
   }
 }
 
+.list {
+  list-style-type: none;
+  > li {
+    display: inline-block;
+    float: none;
+    > a {
+      > svg {
+        width: 5rem;
+        height: 5rem;
+        margin: 1em;
+        fill: white;
+      }
+    }
+  }
+}
 
 .particles{
   >canvas{
@@ -40,9 +68,8 @@
     left:0;
     z-index:0;
   }
-
-
 }
+
 .bounce {
   >span{
     font-size: 1.3em;
@@ -52,7 +79,7 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
-    margin: auto;
+    // margin: auto;
     font-size: 5.3em;
     line-height: 5.3em;
     -webkit-animation: bounce 2s infinite ease-in-out;

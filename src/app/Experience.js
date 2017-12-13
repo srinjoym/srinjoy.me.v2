@@ -12,13 +12,13 @@ import Container from './Container.js';
 class Experience extends React.Component{
   render(){
     return(
-        <div className={theme.bg}>
-          <Container id='experience'>
-              <h2>Experience</h2>
-              <br/>
-              <CardLayout data={experience}/>
-          </Container>
-        </div>
+      <div className={theme.bg}>
+        <Container id='experience'>
+          <h2>Experience</h2>
+          <br/>
+          <CardLayout data={experience}/>
+        </Container>
+      </div>
     );
   }
 }
