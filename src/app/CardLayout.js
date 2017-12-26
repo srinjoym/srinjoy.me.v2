@@ -22,7 +22,7 @@ class CardLayout extends React.Component{
         >
             {this.props.data.map(expData => {
                return <CardExpand
-                        key={expData.title}
+                        key={expData.image}
                         image={require('../../img/'+expData.image)}
                         title={expData.title}
                         subtitle={expData.subtitle}

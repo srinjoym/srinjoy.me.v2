@@ -5,7 +5,7 @@ import { Row,Col } from 'react-flexbox-grid/lib/index';
 import Navigation from 'react-toolbox/lib/navigation';
 import Waypoint from 'react-waypoint';
 import ScrollLink from './ScrollLink.js';
-import IconButton from 'react-toolbox/lib/button';
+import {Button, IconButton} from 'react-toolbox/lib/button';
 import Container from './Container.js';
 import Logo from './Logo.js';
 import Dialog from 'react-toolbox/lib/dialog';
@@ -31,15 +31,15 @@ class Header extends React.Component{
       <div>
       <Waypoint onEnter={this.visible.bind(this)} onLeave={this.invisible.bind(this)}/>
 
-      <AppBar fixed flat className={this.state.transparent? theme.n_trans:theme.trans}>
-        <Container >
+      <AppBar fixed flat rightIcon="menu" className={this.state.transparent? theme.n_trans:theme.trans} onRightIconClick={this.displayMenu.bind(this)}>
+        <Container>
             <Row middle="xs">
               <Col xs={2}>
                 <ScrollLink path={this.props.path} color={this.state.transparent} id="landing"><Logo transparent={this.state.transparent}/></ScrollLink>
               </Col>
               <Col xs={10}>
                 <Navigation className={theme.nav}>
-                  <IconButton onClick={this.displayMenu.bind(this)} className={this.state.transparent? theme.black:theme.white} icon='menu' mini />
+                  <Button onClick={this.displayMenu.bind(this)} className={this.state.transparent? theme.black:theme.white} icon='menu' floating mini/>
                   <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing" color={this.state.transparent} name="Resume" id="res" link={true}/>
                   <ScrollLink path={this.props.path}  color={this.state.transparent} name="Awards" id="awards"/>
                   <ScrollLink path={this.props.path} color={this.state.transparent} name="Projects" id="projects"/>

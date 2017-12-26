@@ -43,7 +43,7 @@ class CardExpand extends React.Component{
                <CardTitle className={theme.title} title={this.props.title} subtitle={this.props.subtitle}/>
              </Col>
              <Col className={theme.icon} xs={2}>
-               <IconButton icon={this.state.expanded? 'keyboard_arrow_up':'keyboard_arrow_down'} floating primary raised />
+               <IconButton icon={this.state.expanded? 'keyboard_arrow_up':'keyboard_arrow_down'} primary />
              </Col>
            </Row>
            {this.state.expanded &&
