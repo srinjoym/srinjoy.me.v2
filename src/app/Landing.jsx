@@ -15,6 +15,7 @@ class Landing extends React.Component{
            action:'Landing Scroll'
         });
      }
+
      render(){
 
        return(
@@ -23,20 +24,20 @@ class Landing extends React.Component{
                <ReactDipper />
              </div>
              <a id="landing"/>
-               <section className={theme.section}>
-                   <Row middle="xs">
-                     <Col className={theme.maxWidth}>
-                         <h1 className={theme.h1}>Hi! I'm Srinjoy</h1>
-                         <h2 className={theme.h2}>Software Developer and Roboticist</h2>
-                         <ul className={theme.list}>
-                           <li><a href="mailto:srinjoy.majumdar@gmail.com"><EmailIcon/></a></li>
-                           <li><a href="http://www.linkedin.com/pub/srinjoy-majumdar/75/913/345/"><LinkedInIcon/></a></li>
-                           <li><a href="https://github.com/srinjoym"><GithubIcon/></a></li>
-                         </ul>
-                     </Col>
-                   </Row>
-                   <ScrollLink onClick={this.recordScroll.bind(this)} path="/" id="about"><Link className={theme.bounce} href="" icon='keyboard_arrow_down' /></ScrollLink>
-               </section>
+             <section className={theme.section}>
+                 <Row middle="xs">
+                   <Col className={theme.maxWidth}>
+                       <h1 className={theme.h1}>Hi! I'm Srinjoy</h1>
+                       <h2 className={theme.h2}>Software Developer and Roboticist</h2>
+                       <ul className={theme.list}>
+                         <li><a href="mailto:srinjoy.majumdar@gmail.com"><EmailIcon/></a></li>
+                         <li><a href="http://www.linkedin.com/pub/srinjoy-majumdar/75/913/345/"><LinkedInIcon/></a></li>
+                         <li><a href="https://github.com/srinjoym"><GithubIcon/></a></li>
+                       </ul>
+                   </Col>
+                 </Row>
+                 <ScrollLink onClick={this.recordScroll.bind(this)} path="/" id="about"><Link className={theme.bounce} href="" icon='keyboard_arrow_down' /></ScrollLink>
+             </section>
            </div>
        );
      }

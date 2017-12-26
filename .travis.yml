@@ -10,14 +10,10 @@ deploy:
   - provider: surge
     skip_cleanup: true
     project: ./build/
-    domain: www.srinjoy.me
-  - provider: surge
-    skip_cleanup: true
-    project: ./build/
     domain: srinjoy.me
   - provider: surge
     skip_cleanup: true
     project: ./build/
-    domain: srinjoy.me/dev/$TRAVIS_BRANCH
+    domain: dev.$TRAVIS_BRANCH.srinjoy.me
     on:
       all_branches: true

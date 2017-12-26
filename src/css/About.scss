@@ -13,6 +13,14 @@
   line-height:1.3em;
   font-weight: lighter;
   text-align: left;
+  @media screen and (max-width: $layout-breakpoint-lg){
+    font-size: 1.5em;
+  }
+  @media screen and (max-width: $layout-breakpoint-xs) {
+    font-size: 1.25em;
+    line-height:1.25em;
+    font-weight: normal;
+  }
 }
 .cardOv{
 
