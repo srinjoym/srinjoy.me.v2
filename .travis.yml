@@ -14,6 +14,6 @@ deploy:
   - provider: surge
     skip_cleanup: true
     project: ./build/
-    domain: dev.$TRAVIS_BRANCH.srinjoy.me
+    domain: dev.srinjoy.me/$TRAVIS_BRANCH
     on:
       all_branches: true
