@@ -17,7 +17,7 @@ deploy:
     domain: dev.$TRAVIS_BRANCH.srinjoy.me
     on:
       all_branches: true
-stages:
+after_script:
   - name: cleanup
     if: type IN (pull_request)
     script: surge teardown dev.$TRAVIS_PULL_REQUEST_BRANCH.srinjoy.me
