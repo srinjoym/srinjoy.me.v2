@@ -18,12 +18,12 @@ class About extends React.Component{
                 </Col>
                 <Col xs={12} md={8}>
                   <p className={theme.p}>
-                    Srinjoy is a second-year student at the University of Texas at Austin studying Electrical and Computer
-                    Engineering. He is a research assistant under Prof. Scott Niekum in the Personal Autonomous Robotics
-                    Lab at UT Austin, where he works on Deep Learning projects and programs robots for Human Robot Interaction tasks.
-                    He is also working as a Software Engineering Intern at Datos IO, where he works on cloud data
-                    protection at scale for big data filesystems like Hadoop. He grew up in San Jose, California where he was (and still is!)
-                    a huge fan of the Golden State Warriors and the 49ers.
+                    Srinjoy is a second-year student at the University of Texas at Austin studying Electrical and Computer Engineering.
+                    He is a research assistant under Dr. Andrea Thomaz and Dr. Scott Niekum in the Socially Intelligent Machines and Personal
+                    Autonomous Robotics Labs. He works on various manipulation and perception related research projects in the Human-Robot
+                    Interaction domain. Most recently, he interned on the Software Engineering team at Rubrik Datos IO, where he worked on
+                    cloud data protection at scale for big data file systems like Hadoop. He grew up in San Jose, California where he was
+                    (and still is!) a huge fan of the Golden State Warriors.
                   </p>
                 </Col>
               </Row>

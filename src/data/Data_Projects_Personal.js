@@ -1,13 +1,4 @@
-const projects = [
-   {
-      'id': 'viewpointsel',
-      'title': 'Viewpoint Selection for Failure Detection',
-      'subtitle': 'AI Research Paper',
-      'image': 'gemini.jpg',
-      'text': 'Developed scripts in ROS using Python to maneuver humanoid robot to assemble IKEA table, and capture images at various viewpoints for data. Detected failures in robotics domains such as furniture assembly and surveillance tasks, paper presented at IROS 2017',
-      'link':'https://drive.google.com/file/d/0B3RGMraz9IZlbzIxYnNqU2N3REE/view?usp=sharing',
-      'ext': true,
-   },
+const projects_personal = [
   {
     'id': 'rob_gripper',
     'title': 'Robot Gripper',
@@ -59,4 +50,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default projects_personal;
