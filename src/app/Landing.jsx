@@ -7,6 +7,7 @@ import Link from 'react-toolbox/lib/link';
 import ScrollLink from './ScrollLink.js';
 import ReactDipper from 'react-dipper';
 import {GithubIcon, LinkedInIcon,EmailIcon} from './Icons.jsx';
+import ParticleConfig from './dipper_config.json';
 //Landing page with react dipper background
 class Landing extends React.Component{
      recordScroll(){
@@ -21,14 +22,14 @@ class Landing extends React.Component{
        return(
            <div className={theme.bg}>
              <div className={theme.particles}>
-               <ReactDipper />
+               <ReactDipper particleParams={ParticleConfig}/>
              </div>
              <a id="landing"/>
              <section className={theme.section}>
                  <Row middle="xs">
                    <Col className={theme.maxWidth}>
                        <h1 className={theme.h1}>Hi! I'm Srinjoy</h1>
-                       <h2 className={theme.h2}>Software Developer and Roboticist</h2>
+                       <h2 className={theme.h2}>Software Developer and Robot Whisperer</h2>
                        <ul className={theme.list}>
                          <li><a href="mailto:srinjoy.majumdar@gmail.com"><EmailIcon/></a></li>
                          <li><a href="https://github.com/srinjoym"><GithubIcon/></a></li>
