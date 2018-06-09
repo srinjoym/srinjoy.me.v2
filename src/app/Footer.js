@@ -17,8 +17,8 @@ class Footer extends React.Component{
         <Col xs={12} md={6}>
           <ul className={theme.list}>
             <li><a href="mailto:srinjoy.majumdar@gmail.com"><EmailIcon/></a></li>
-            <li><a href="http://www.linkedin.com/pub/srinjoy-majumdar/75/913/345/"><LinkedInIcon/></a></li>
             <li><a href="https://github.com/srinjoym"><GithubIcon/></a></li>
+            <li><a href="http://www.linkedin.com/pub/srinjoy-majumdar/75/913/345/"><LinkedInIcon/></a></li>
           </ul>
         </Col>
       </Row>
