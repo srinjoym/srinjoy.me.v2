@@ -4,6 +4,7 @@ import Landing from './Landing.jsx';
 import About from './About.js';
 import Experience from './Experience.js';
 import Projects from './Projects.js';
+import Research from './Research.js';
 import Awards from './Awards.js';
 import { Grid,Row,Col } from 'react-flexbox-grid/lib/index';
 import {Button, IconButton} from 'react-toolbox/lib/button';
@@ -17,6 +18,7 @@ class Home extends React.Component{
         <Landing/>
         <About/>
         <Experience/>
+        <Research/>
         <Projects/>
         <Awards/>
       </div>

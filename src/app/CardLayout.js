@@ -28,7 +28,8 @@ class CardLayout extends React.Component{
                         subtitle={expData.subtitle}
                         text={expData.text}
                         link={expData.link}
-                        ext={expData.ext}/>;
+                        ext={expData.ext}
+                        wide={expData.wide}/>;
               })}
         </Masonry>
         </div>

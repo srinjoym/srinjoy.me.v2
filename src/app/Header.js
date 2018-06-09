@@ -43,6 +43,7 @@ class Header extends React.Component{
                   <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing" color={this.state.transparent} name="Resume" id="res" link={true}/>
                   <ScrollLink path={this.props.path}  color={this.state.transparent} name="Awards" id="awards"/>
                   <ScrollLink path={this.props.path} color={this.state.transparent} name="Projects" id="projects"/>
+                  <ScrollLink path={this.props.path} color={this.state.transparent} name="Research" id="research"/>
                   <ScrollLink path={this.props.path}  color={this.state.transparent} name="Experience" id="experience"/>
                   <ScrollLink path={this.props.path}  color={this.state.transparent} name="About Me" id="about"/>
                 </Navigation>
@@ -59,6 +60,7 @@ class Header extends React.Component{
           <Navigation type='vertical'>
             <ScrollLink path={this.props.path} color={true} name="About Me" id="about" onClick={this.displayMenu.bind(this)}/>
             <ScrollLink path={this.props.path} color={true} name="Experience" id="experience" onClick={this.displayMenu.bind(this)}/>
+            <ScrollLink path={this.props.path} color={true} name="Research" id="research" onClick={this.displayMenu.bind(this)}/>
             <ScrollLink path={this.props.path} color={true} name="Projects" id="projects" onClick={this.displayMenu.bind(this)}/>
             <ScrollLink path={this.props.path} color={true} name="Awards" id="awards" onClick={this.displayMenu.bind(this)}/>
             <ScrollLink path="https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing" color={true} name="Resume" id="res" link={true}/>
