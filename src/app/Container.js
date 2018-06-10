@@ -27,7 +27,7 @@ class Container extends React.Component{
       <div className={theme.max_width}>
         {this.props.anchor&& <a className={theme.anchor} id={this.props.id}/>}
         <Row center="xs" middle={this.props.middle? "xs":"lg"}>
-          <Col className={theme.col} xs={this.state.width>950? 9:11}>
+          <Col className={theme.col} xs={this.state.width>1050? 9:11}>
             {this.props.children}
           </Col>
         </Row>
