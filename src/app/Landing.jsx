@@ -27,7 +27,7 @@ class Landing extends React.Component{
              <a id="landing"/>
              <section className={theme.section}>
                  <Row middle="xs">
-                   <Col className={theme.maxWidth}>
+                   <Col className={theme.maxWidth} xs={11}>
                        <h1 className={theme.h1}>Hi! I'm Srinjoy</h1>
                        <h2 className={theme.h2}>Software Developer and Robot Whisperer</h2>
                        <ul className={theme.list}>
