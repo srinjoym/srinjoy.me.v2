@@ -1,11 +1,18 @@
 const experience = [
-   {
-      'id': 'sw_intern_datos',
+    {
+      'id': 'sw_intern_github',
       'title': 'Software Developer Intern',
-      'subtitle': 'Datos IO',
-      'image': 'datos.jpg',
-      'text': 'Designed and developed backup solution in Python for petabyte scale Hadoop clusters, took project from inception to POC ready.Primary contributor to UI design and fixes in Angular JS for RecoverX 2.0 product.'
-   },
+      'subtitle': 'GitHub',
+      'image': 'professortocat_v2_card.png',
+      'text': 'Working on GitHub Classroom and Classroom Desktop! GitHub Classroom makes it easy for teachers to distribute starter code and collect results for programmming assignments.'
+  },
+  {
+    'id': 'sw_intern_datos',
+    'title': 'Software Developer Intern',
+    'subtitle': 'Datos IO',
+    'image': 'datos_card.png',
+    'text': 'Designed and developed backup solution in Python for petabyte scale Hadoop clusters, took project from inception to POC ready.Primary contributor to UI design and fixes in Angular JS for RecoverX 2.0 product.'
+  },
   {
     'id': 'ug_researcher',
     'title': 'Undergraduate Researcher',

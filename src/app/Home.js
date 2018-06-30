@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Landing from './Landing.jsx';
 import About from './About.js';
