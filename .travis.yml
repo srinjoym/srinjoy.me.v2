@@ -16,4 +16,4 @@ deploy:
     project: ./build/
     domain: dev.srinjoy.me
     on:
-      all_branches: true
+      branch: master
