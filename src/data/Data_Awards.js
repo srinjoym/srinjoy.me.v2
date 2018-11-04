@@ -33,7 +33,7 @@ const awards = [
     'subtitle': 'Personal Recall Notifier',
     'image': 'US-PatentTrademarkOffice-Seal_card.png',
     'text': 'After working on the Personal Recall Notifier Project for a few years, my team and I decided to file a provisional patent to protect our ideas. We worked with professionals from the FDA and Stanford to further develop the idea and produce all the documentation needed to file a patent. Patent was granted in sophomore year of high school.'
-  },
-];
+  }
+]
 
-export default awards;
+export default awards
