@@ -12,7 +12,7 @@ class Ufo extends React.Component {
           <Container>
             <h2 className={theme.h2}>Ultimate Funky Object</h2>
             <div className={theme.vidcontainer}>
-              <iframe src='http://www.youtube.com/embed/yCBjZ0s0kAo' frameborder='0' allowfullscreen />
+              <iframe src='http://www.youtube.com/embed/yCBjZ0s0kAo' frameBorder='0' allowFullScreen />
             </div>
           </Container>
         </div>

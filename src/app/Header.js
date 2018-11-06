@@ -72,7 +72,8 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  path: PropTypes.string
 }
 
 export default Header

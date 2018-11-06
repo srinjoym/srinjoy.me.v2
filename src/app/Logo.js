@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import theme from '../css/GrayAppBar.scss'
 
 class Logo extends React.Component {
@@ -24,6 +24,10 @@ class Logo extends React.Component {
       </svg>
     )
   }
+}
+
+Logo.propTypes = {
+  transparent: PropTypes.bool
 }
 
 export default Logo

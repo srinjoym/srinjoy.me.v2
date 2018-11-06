@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import { Row, Col } from 'react-flexbox-grid/lib/'
 import theme from '../css/Container.scss'
 
@@ -35,7 +35,16 @@ class Container extends React.Component {
     )
   }
 }
+
 Container.defaultProps = {
   anchor: true
 }
+
+Container.propTypes = {
+  anchor: PropTypes.bool,
+  id: PropTypes.number,
+  middle: PropTypes.bool,
+  children: PropTypes.any
+}
+
 export default Container

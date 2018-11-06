@@ -13,7 +13,7 @@ class MonkeyPython extends React.Component {
           <Container>
             <h2 className={theme.h2}>Junky Monkey</h2>
             <div className={theme.vidcontainer}>
-              <iframe src='https://www.youtube.com/embed/t28CYJwM4wU' frameborder='0' allowfullscreen />
+              <iframe src='https://www.youtube.com/embed/t28CYJwM4wU' frameBorder='0' allowFullScreen />
             </div>
           </Container>
         </div>
@@ -46,7 +46,7 @@ class MonkeyPython extends React.Component {
             <img className={theme.img_width} src={require('../../img/oscilloscope.jpg')} />
             <p>During build season, I worked on designing the elevator subsystem. I led a group of around 15 members to prototype conceptual designs for the subsystem. By rapidly producing these prototypes, it was evident which ideas were going to work. For example, here is a test I did with my team to explore stack security ideas early on in the season. We are testing to see if a guide like the pool noodle at the top of the PVC structure would be able to stabilize the container while it is pushed out:</p>
             <div className={theme.vidcontainer}>
-              <iframe src='https://www.youtube.com/embed/k1B5vzVRuLs' frameborder='0' allowfullscreen />
+              <iframe src='https://www.youtube.com/embed/k1B5vzVRuLs' frameBorder='0' allowFullScreen />
             </div>
           </Card>
           <Card className={theme.card}>

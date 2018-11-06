@@ -13,7 +13,7 @@ class FunkCannon extends React.Component {
           <Container>
             <h2 className={theme.h2}>Funk Cannon</h2>
             <div className={theme.vidcontainer}>
-              <iframe src='http://www.youtube.com/embed/6LP_wzg0UKI' frameborder='0' allowfullscreen />
+              <iframe src='http://www.youtube.com/embed/6LP_wzg0UKI' frameBorder='0' allowFullScreen />
             </div>
           </Container>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import ToolboxLink from 'react-toolbox/lib/link'
 import theme from '../css/ScrollLink.scss'
 import { Link } from 'react-router'
@@ -19,7 +19,19 @@ class ScrollLink extends React.Component {
     )
   }
 }
+
 ScrollLink.defaultProps = {
   link: false
 }
+
+ScrollLink.propTypes = {
+  id: PropTypes.number,
+  link: PropTypes.bool,
+  path: PropTypes.string,
+  color: PropTypes.bool,
+  onClick: PropTypes.func,
+  name: PropTypes.string,
+  children: PropTypes.any
+}
+
 export default ScrollLink

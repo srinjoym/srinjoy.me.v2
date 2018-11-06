@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import Header from './Header.js'
 import theme from '../css/App.scss'
 import Footer from './Footer.js'
@@ -14,6 +14,11 @@ class App extends React.Component {
       </div>
     )
   }
+}
+
+App.propTypes = {
+  location: PropTypes.object.isRequired,
+  children: PropTypes.any
 }
 
 export default App

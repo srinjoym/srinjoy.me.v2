@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import theme from '../css/CardLayout.scss'
 import CardExpand from './CardExpand.js'
 import Masonry from 'react-masonry-css'
@@ -36,4 +36,9 @@ class CardLayout extends React.Component {
     )
   }
 }
+
+CardLayout.propTypes = {
+  data: PropTypes.array
+}
+
 export default CardLayout

@@ -12,7 +12,7 @@ class MonkeyPython extends React.Component {
           <Container>
             <h2 className={theme.h2}>Monkey Python</h2>
             <div className={theme.vidcontainer}>
-              <iframe src='https://www.youtube.com/embed/5HujZl5uKcE' frameborder='0' allowfullscreen />
+              <iframe src='https://www.youtube.com/embed/5HujZl5uKcE' frameBorder='0' allowFullScreen />
             </div>
           </Container>
         </div>
