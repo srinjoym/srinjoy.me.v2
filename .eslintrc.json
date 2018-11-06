@@ -1,5 +1,5 @@
 {
-"extends": [
+    "extends": [
         "standard",
         "plugin:react/recommended"
     ],
@@ -7,5 +7,10 @@
         "standard",
         "promise",
         "react"
-    ]
+    ],
+    "settings": {
+        "react": {
+          "version": "15.3.0"
+        }
+      }
 }
