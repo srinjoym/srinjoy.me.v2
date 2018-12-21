@@ -1,10 +1,10 @@
 const experience = [
-    {
-      'id': 'sw_intern_github',
-      'title': 'Software Developer Intern',
-      'subtitle': 'GitHub',
-      'image': 'professortocat_v2_card.png',
-      'text': 'Working on GitHub Classroom and Classroom Desktop! GitHub Classroom makes it easy for teachers to distribute starter code and collect results for programmming assignments.'
+  {
+    'id': 'sw_intern_github',
+    'title': 'Software Developer Intern',
+    'subtitle': 'GitHub',
+    'image': 'professortocat_v2_card.png',
+    'text': 'Working on GitHub Classroom and Classroom Desktop! GitHub Classroom makes it easy for teachers to distribute starter code and collect results for programmming assignments.'
   },
   {
     'id': 'sw_intern_datos',
@@ -47,7 +47,7 @@ const experience = [
     'subtitle': 'Galileo Learning',
     'image': 'galileo_card.png',
     'text': 'Worked as intern for Galileo during the summer of 2014. Developed the curriculum with lead instructors for the science courses.'
-  },
-];
+  }
+]
 
-export default experience;
+export default experience

@@ -1,8 +1,8 @@
-const path = require('path');
-const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const autoprefixer = require('autoprefixer')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   context: __dirname,
@@ -17,7 +17,7 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['', '.scss', '.css', '.js', '.json','.jsx','.svg'],
+    extensions: ['', '.scss', '.css', '.js', '.json', '.jsx', '.svg'],
     modulesDirectories: [
       'node_modules',
       path.resolve(__dirname, './node_modules')
@@ -38,7 +38,7 @@ module.exports = {
         test: /\.(jpg|png|JPG|PNG|jpeg|JPEG)$/,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[hash].[ext]',
+          name: '[path][name].[hash].[ext]'
         }
       },
       {
@@ -54,8 +54,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-       filename: '200.html',
-       template: './src/www/index.html'
+      filename: '200.html',
+      template: './src/www/index.html'
     }),
     new ExtractTextPlugin('bundle.css', { allChunks: true }),
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -70,4 +70,4 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development')
     })
   ]
-};
+}

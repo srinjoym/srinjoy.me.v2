@@ -1,11 +1,11 @@
-const projects_personal = [
+const ProjectsPersonal = [
   {
     'id': 'rob_gripper',
     'title': 'Robot Gripper',
     'subtitle': 'Personal',
     'image': 'base_card.png',
     'text': 'I designed my own Soft Robotic Gripper this past summer to explore safer and more reliable ways of making robots. I modeled the gripper mold and made it using EcoFlex. It can pick up an object in any orientation as it conforms to the object’s shape while maintaining a constant grip.I 3D printed most of the arm including the molds for the gripper and the base.',
-    'link':'softrobot'
+    'link': 'softrobot'
   },
   {
     'id': 'monk_py',
@@ -37,7 +37,7 @@ const projects_personal = [
     'subtitle': 'Lynbrook Robotics',
     'image': 'ufo_card.png',
     'text': 'Ultimate Funky Object was the 2013 robot for Lynbrook Robotics. The robots purpose was to shoot frisbees into high goals and climb a three runged pyramid at the end for bonus points. As a freshman on the team, I was heavily involved with the electrical subsystem of the robot. This robot was very successful, winning the Engineering Inspiration award at Boston qualifying it for World Championships!',
-    'link':'ufo'
+    'link': 'ufo'
   },
   {
     'id': 'rec_not',
@@ -45,9 +45,9 @@ const projects_personal = [
     'subtitle': 'Botworks',
     'image': '4591147_orig_card.png',
     'text': 'The Recall Notification System started out as our project for First Lego League: Food Factor. This product was created to reduce the time it takes for notifications of recalls to reach the consumer. Using the app or a barcode scanner, consumers could input their receipt. The app would then continually check with recall databases from FDA and CDC and immediately alert the consumer if their product was recalled.',
-    'link':'http://www.botworks.co.nr',
-    'ext':true
-  },
-];
+    'link': 'http://www.botworks.co.nr',
+    'ext': true
+  }
+]
 
-export default projects_personal;
+export default ProjectsPersonal
