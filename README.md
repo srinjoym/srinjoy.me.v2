@@ -5,3 +5,4 @@ Source code for my personal website written using ReactJS. I've been developing 
 
 Feel free to take inspiration from the design or code base. It's live at www.srinjoy.me
 
+![Alt text](./img/landing_screenshot.png?raw=true "Homepage")
