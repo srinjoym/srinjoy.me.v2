@@ -69,7 +69,7 @@ class MonkeyPython extends React.Component {
               <Col xs={12} md={6}>
                 <h3>Arizona North Regional</h3>
                 <ul className={theme.awlist}>
-                  <li>Judge's Award</li>
+                  <li>{"Judge's Award"}</li>
                 </ul>
                 <h3>Silicon Valley Regional</h3>
                 <ul className={theme.awlist}>

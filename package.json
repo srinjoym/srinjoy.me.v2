@@ -3,6 +3,7 @@
   "description": "Personal portfolio website for Srinjoy Majumdar.",
   "homepage": "https://www.srinjoy.me",
   "version": "0.0.1",
+  "license": "MIT",
   "author": {
     "name": "Srinjoy Majumdar",
     "url": "http://github.com/srinjoym"
@@ -18,6 +19,16 @@
     "react-component",
     "toolbox"
   ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config",
+    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
+    "start": "node server",
+    "test": "jest",
+    "lint": "eslint ./"
+  },
+  "git": {
+    "pre-push": "npm build && npm deploy"
+  },
   "devDependencies": {
     "autoprefixer": "~6.4.0",
     "babel-core": "~6.13.2",
@@ -33,14 +44,14 @@
     "classnames": "~2.2.1",
     "cross-env": "~2.0.0",
     "css-loader": "~0.23.1",
-    "eslint": "^5.8.0",
+    "eslint": "^5.10.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-babel": "~3.2.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "~6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "express": "~4.13.3",
     "extract-text-webpack-plugin": "~1.0.1",
@@ -82,16 +93,6 @@
     "webpack-dev-middleware": "~1.6.1",
     "webpack-hot-middleware": "~2.12.2"
   },
-  "scripts": {
-    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config",
-    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
-    "start": "node server",
-    "test": "jest"
-  },
-  "git": {
-    "pre-push": "npm build && npm deploy"
-  },
-  "license": "MIT",
   "dependencies": {
     "history": "^3.0.0",
     "prop-types": "15.5.10",

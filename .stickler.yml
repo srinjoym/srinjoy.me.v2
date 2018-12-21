@@ -1,8 +1,0 @@
----
-linters:
-  eslint:
-    config_file: '.eslintrc.json'
-    fixer: true
-fixers:
-  enable: true
-fail_on_comments: true
