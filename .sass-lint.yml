@@ -1,3 +1,7 @@
+files:
+  ignore:
+    - '**/node_modules/'
+    - '**/build/'
 options:
   formatter: stylish
   merge-default-rules: false
