@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: '200.html',
+      filename: '404.html',
       template: './src/www/index.html'
     }),
     new ExtractTextPlugin('bundle.css', { allChunks: true }),
