@@ -14,7 +14,7 @@ script: npm run lint
 stages:
   - test
   - name: deploy
-    if: branch = master
+    if: branch = master and type = push
 
 jobs:
   include:
