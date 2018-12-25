@@ -9,6 +9,10 @@ cache:
   directories:
     - node_modules
 
+branches:
+  only:
+    - master
+
 stages:
   - lint
   - name: deploy
