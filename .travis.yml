@@ -1,20 +1,38 @@
+notifications:
+  email: false
+
 language: node_js
 node_js:
   - "stable"
+
 cache:
   directories:
-  - node_modules
-script:
-  - npm run lint
-  - npm run build
-deploy:
-  - provider: surge
-    skip_cleanup: true
-    project: ./build/
-    domain: www.srinjoy.me
-  - provider: surge
-    skip_cleanup: true
-    project: ./build/
-    domain: dev.srinjoy.me
-    on:
-      branch: master
+    - node_modules
+
+branches:
+  only:
+    - master
+
+stages:
+  - lint
+  - name: deploy
+    if: branch = master AND type != pull_request
+
+jobs:
+  include:
+    - stage: lint
+      script: npm run lint
+    - &deploy
+      stage: deploy
+      script: npm run build
+      deploy:
+        - provider: surge
+          skip_cleanup: true
+          project: ./build/
+          domain: www.srinjoy.me
+        - provider: surge
+          skip_cleanup: true
+          project: ./build/
+          domain: dev.srinjoy.me
+          on:
+            branch: master
