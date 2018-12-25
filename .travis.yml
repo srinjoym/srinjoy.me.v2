@@ -9,15 +9,15 @@ cache:
   directories:
     - node_modules
 
-script: npm run lint
-
 stages:
-  - test
+  - lint
   - name: deploy
     if: branch = master
 
 jobs:
   include:
+    - stage: lint
+      script: npm run lint
     - &deploy
       stage: deploy
       script: npm run build
