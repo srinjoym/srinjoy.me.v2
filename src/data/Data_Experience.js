@@ -40,13 +40,6 @@ const experience = [
     'subtitle': 'Calabazas Library',
     'image': 'calabazas_card.jpg',
     'text': 'Weekly one on one sessions at Calabazas library with library visitors offering technology help on a wide variety of computing devices. I help with basic things like setting up an email account, all the way upto coding questions in Java. Anyone can sign up or walk into the class on Thursdays at 4:00PM.'
-  },
-  {
-    'id': 'sum_intern',
-    'title': 'Summer Intern',
-    'subtitle': 'Galileo Learning',
-    'image': 'galileo_card.png',
-    'text': 'Worked as intern for Galileo during the summer of 2014. Developed the curriculum with lead instructors for the science courses.'
   }
 ]
 

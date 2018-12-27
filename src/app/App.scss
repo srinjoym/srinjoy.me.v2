@@ -1,0 +1,28 @@
+h2{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 450;
+}
+.div{
+  overflow: hidden;
+}
+p, li {
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+
+// :global {
+//   h1, h2, h3, h4,p {
+//     font-family: "Karla", "Helvetica", "Arial", sans-serif !important;
+//   }
+// }
+
+:global {
+  .serif {
+    font-family: "Vollkorn", "serif";
+  }
+}

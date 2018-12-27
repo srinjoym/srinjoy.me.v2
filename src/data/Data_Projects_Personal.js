@@ -1,5 +1,13 @@
 const ProjectsPersonal = [
   {
+    'id': 'lego_world',
+    'title': 'Lego World',
+    'subtitle': 'UT Austin Image Processing Course',
+    'image': 'legoworld_card.png',
+    'text': 'I designed my own Soft Robotic Gripper this past summer to explore safer and more reliable ways of making robots. I modeled the gripper mold and made it using EcoFlex. It can pick up an object in any orientation as it conforms to the object’s shape while maintaining a constant grip.I 3D printed most of the arm including the molds for the gripper and the base.',
+    'link': 'legoworld'
+  },
+  {
     'id': 'rob_gripper',
     'title': 'Robot Gripper',
     'subtitle': 'Personal',

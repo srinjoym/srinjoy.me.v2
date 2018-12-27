@@ -5919,6 +5919,18 @@ pretty-format@^21.2.1:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
+primer-support@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/primer-support/-/primer-support-4.7.0.tgz#84521e06f9b17a7eb8cedf1e6c79a5f4933e18f6"
+  integrity sha512-vMUPjCGKVPgrRNGqZx2ULBHmg/r3TzsYqYG53qfVj34C5U0Vx+Mnq/upb0VOQNqeqvSOIgjjKyOzQfhyLyA/oQ==
+
+primer-utilities@^4.14.1:
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/primer-utilities/-/primer-utilities-4.14.1.tgz#b8a783934ecac494419b1b224956111a3eef0c29"
+  integrity sha512-fts5+Ml6x9PcOoapUGVPeIH/ENYg4pITeR9EKLCEPYyPlNEBq4RWMPM6wSyUE2VhLqe92/xu7kLsLSo417VERQ==
+  dependencies:
+    primer-support "4.7.0"
+
 private@^0.1.6, private@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"

@@ -1,16 +1,18 @@
 import 'react-toolbox/lib/commons.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App.js'
-import Home from './Home.js'
-import MonkeyPython from './MonkeyPython.js'
-import JunkyMonkey from './JunkyMonkey.js'
-import FunkCannon from './FunkCannon.js'
-import Ufo from './Ufo.js'
-import SoftRobot from './SoftRobot.js'
 import ReactGA from 'react-ga'
 import { applyRouterMiddleware, IndexRoute, Router, Route, browserHistory } from 'react-router'
 import { useScroll } from 'react-router-scroll'
+
+import App from './App.jsx'
+import Home from './Home/Home.jsx'
+import MonkeyPython from './ProjectPages/MonkeyPython/MonkeyPython.jsx'
+import JunkyMonkey from './ProjectPages/JunkyMonkey/JunkyMonkey.jsx'
+import FunkCannon from './ProjectPages/FunkCannon/FunkCannon.jsx'
+import LegoWorld from './ProjectPages/LegoWorld/LegoWorld.jsx'
+import Ufo from './ProjectPages/UFO/Ufo.jsx'
+import SoftRobot from './ProjectPages/SoftRobot/SoftRobot.jsx'
 
 ReactGA.initialize('UA-56121800-2')
 
@@ -40,6 +42,7 @@ ReactDOM.render(
       <Route path='/funkcannon' component={FunkCannon} />
       <Route path='/ufo' component={Ufo} />
       <Route path='/softrobot' component={SoftRobot} />
+      <Route path='/legoworld' component={LegoWorld} />
     </Route>
   </Router>
   , document.getElementById('app'))
