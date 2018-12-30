@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react'
 import { Button, IconButton } from 'react-toolbox/lib/button'
+import { browserHistory, Link } from 'react-router';
 import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card'
 import { Row, Col } from 'react-flexbox-grid/lib/'
+
 import theme from './CardExpand.scss'
-import { Link } from 'react-router'
 import ReactGA from 'react-ga'
 
 // Custom Card Component class, takes in props for aspect ratio, image, title, subtitle, and learn more links
@@ -16,7 +17,11 @@ class CardExpand extends React.Component {
 
   // Changes toggle state and logs event for GA with title
   toggleExpandState () {
-    this.setState({ expanded: !this.state.expanded })
+    if (this.props.text) {
+      this.setState({ expanded: !this.state.expanded })
+    } else if(this.props.link) {
+      browserHistory.push(`/${this.props.link}`)
+    }
     ReactGA.event({
       category: 'Navigation',
       action: 'Expanded card',
@@ -40,11 +45,13 @@ class CardExpand extends React.Component {
           <Col xs={10}>
             <CardTitle className={theme.title} title={this.props.title} subtitle={this.props.subtitle} />
           </Col>
+          {this.props.text &&
           <Col className={theme.icon} xs={2}>
             <IconButton icon={this.state.expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'} primary />
           </Col>
+          }
         </Row>
-        {this.state.expanded &&
+        {this.props.text && this.state.expanded &&
         <CardText className={theme.text}>{this.props.text}</CardText>
         }
         {this.props.link != null &&
