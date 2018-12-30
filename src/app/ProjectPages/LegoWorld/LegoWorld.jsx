@@ -1,10 +1,15 @@
 import React from 'react'
 import { Row, Col } from 'react-flexbox-grid/lib/'
+
 import theme from './LegoWorld.scss'
-import Card from 'react-toolbox/lib/card'
 import Container from '../../Shared/Container/Container.jsx'
+import Content from './LegoWorld.md'
 
 class LegoWorld extends React.Component {
+  Image (src) {
+    return <img src={require(src)}/>;
+  }
+
   render () {
     return (
       <div className={theme.legoworld}>
@@ -31,15 +36,9 @@ class LegoWorld extends React.Component {
         </div>
 
         <Container>
-          <Row>
-            <Col xs={8}>
-              <h3>Stages</h3>
-              <p className="serif mt-3">I split this project into three stages so I could plan out the work. Each stage built
-              on top of the work from the previous one so it allowed me to develop the app while learning throughout the semester.</p>
-
-              <h4 className="mt-2">Stage 1 - Keypoint Detection</h4>
-              <h4 className="mt-2">Stage 2 - 2D Feature Matching</h4>
-              <h4 className="mt-2">Stage 3 - 3D Augmented Reality</h4>
+          <Row className={theme.content}>
+            <Col xs={9}>
+              <Content />
             </Col>
           </Row>
         </Container>
