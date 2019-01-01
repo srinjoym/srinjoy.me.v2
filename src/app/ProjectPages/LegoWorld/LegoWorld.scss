@@ -1,29 +1,5 @@
-.legoworld {
-  h3 {
-    font-weight: 500;
-  }
-}
+@import "../ProjectPages.scss";
 
-.bg{
-  padding-top: 7rem;
-  background-color: lightcoral;
-  color: white;
-  // background-image: radial-gradient(circle at right bottom, rgb(255, 208, 138) 0px, rgb(255, 163, 118) 28%, rgb(210, 101, 120) 52%, rgb(104, 42, 132) 79%, rgb(36, 22, 104) 100%);
-
-  h4 {
-    text-align: center;
-    opacity: 0.8;
-  }
-}
-
-.ul {
-  list-style-position: inside;
-}
-
-.overview{
-  margin-top: 2em;
-  justify-content: center;
-}
 
 .iphone {
   height: 400px;
@@ -31,29 +7,17 @@
   // transform: rotate(-10deg);
 }
 
-.serif {
-  font-family: "Vollkorn", "serif";
-}
+.bg{
+  padding-top: 7rem;
+  background: #ff9966;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.brick {
-  height: 200px;
-}
-
-.content {
-  p {
-    @extend .serif;
-  }
-
-  h3 {
-    @extend .mb-3;
-  }
+  color: white;
+  // background-image: radial-gradient(circle at right bottom, rgb(255, 208, 138) 0px, rgb(255, 163, 118) 28%, rgb(210, 101, 120) 52%, rgb(104, 42, 132) 79%, rgb(36, 22, 104) 100%);
 
   h4 {
-    @extend .my-2;
-  }
-
-  img {
-    @extend .mt-3;
-    height: 350px;
+    text-align: center;
+    opacity: 0.8;
   }
 }

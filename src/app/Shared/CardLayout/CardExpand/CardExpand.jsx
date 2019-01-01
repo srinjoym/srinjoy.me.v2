@@ -3,6 +3,7 @@ import { Button, IconButton } from 'react-toolbox/lib/button'
 import { browserHistory, Link } from 'react-router';
 import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card'
 import { Row, Col } from 'react-flexbox-grid/lib/'
+import Chip from 'react-toolbox/lib/chip'
 
 import theme from './CardExpand.scss'
 import ReactGA from 'react-ga'
@@ -50,13 +51,27 @@ class CardExpand extends React.Component {
             <IconButton icon={this.state.expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'} primary />
           </Col>
           }
+          {this.props.categories &&
+          <div className={theme.categories_container}>
+            {this.props.categories.map(category => {
+              return (
+              <Chip className={theme.chip}>
+                {category}
+              </Chip>
+              )
+            })}
+          </div>
+          }
         </Row>
         {this.props.text && this.state.expanded &&
         <CardText className={theme.text}>{this.props.text}</CardText>
         }
         {this.props.link != null &&
         <CardActions>
-          {this.props.ext ? <Button onClick={this.recordLearnMore.bind(this)} label='Learn More' href={this.props.link} /> : <Link to={this.props.link}><Button label='Learn More' /></Link>}
+          {this.props.ext ?
+          <Button className={theme.action_button} onClick={this.recordLearnMore.bind(this)} label='Learn More' href={this.props.link} /> :
+          <Link to={this.props.link}><Button className={theme.action_button} label='Learn More' /></Link>
+          }
         </CardActions>
         }
       </Card>

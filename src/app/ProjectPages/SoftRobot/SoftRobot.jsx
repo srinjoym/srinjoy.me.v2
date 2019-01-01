@@ -1,37 +1,44 @@
 import React from 'react'
-import theme from '../Robot.scss'
+import { Row, Col } from 'react-flexbox-grid/lib/'
 import Card from 'react-toolbox/lib/card'
+
+import theme from './SoftRobot.scss'
 import Container from '../../Shared/Container/Container.jsx'
+import Content from "./SoftRobot.md"
 
 class SoftRobot extends React.Component {
   render () {
     return (
-      <div className={theme.softrobotbg}>
+      <div>
+        <div className={theme.bg}>
+          <Container>
+              <Row className={theme.overview}>
+                <Col xs={12} sm={7}>
+                  <h2 className="pb-0 mt-1">Soft Robot Gripper</h2>
+                  <h4>Pneumatic Flexible Gripper</h4>
+
+                  <h3 className="mt-4">Overview</h3>
+                  <p className="mt-2">
+                  I designed a soft pneumatic gripper in my senior year of high school to explore making robots
+                  more approachable. The gripper can pick up an object in any orientation as it conforms
+                  to the object’s shape while maintaining a constant grip. Not only is it a better performer that a traditional
+                  two finger gripper, but it also reduces the risk of injury for humans interacting with the robot significantly. 
+                  I 3D modeled the gripper mold based on pneumatic simulations and molded it using EcoFlex.
+                  </p>
+                </Col>
+                <Col xs={12} sm={3} smOffset={1}>
+                  <img className={theme.overview_image} src={require('../../../../img/base_card.png')}></img>
+                </Col>
+              </Row>
+            </Container>
+        </div>
 
         <Container>
-          <h2 className={theme.contmarg}>Soft Robotic Gripper</h2>
-          <Card className={theme.card}>
-            <h3>The Base</h3>
-            <img className={theme.img_small_width} src={require('../../../../img/base.png')} />
-            <p>
-              I modeled the base using Autodesk Inventor, and made the design almost fully 3D printable.
-              I went through several iterations on my design to eliminate all interferences between the arms
-              and to get everything to fit neatly. As a result, I didn’t have to print my parts over and over again,
-              because I had already done all my checks on the 3D model. I designed the arm to have a reach of around
-              10 inches so that it could grab objects anywhere. I used servos to power the arm, and an Arduino to
-              control all of them. I also used a bungee cord as a counterbalance on the arm so it would maintain its
-              position even when there was no power to the motors. This prevented the motors from running all the time
-              and stalling. For the next revision, I would use more heavy duty motors with more power so that
-              I could make the arm sturdier.
-            </p>
-          </Card>
-          <Card className={theme.card}>
-            <h2>Soft Robotic Gripper</h2>
-            <h3>The Gripper</h3>
-            <img className={theme.img_small_width} src={require('../../../../img/gripper.png')} />
-            <p>I designed the Gripper of the Robotic Arm using Autodesk Inventor as well. I designed the molds to be 3D printable so I was able to prototype really quickly. I finally settled on a four finger design that was very effective at grabbing objects. After I 3D printed the molds, I poured EcoFlex into them and let them set under the sun. The final product was a silicone gripper with ridges for air to flow so that the finger could fold and grab things. I used a pneumatic compressor and a pressure sensor to maintain constant pressure so the gripper would not lose grip on objects. I also used Abaqus a Finite Element Analysis software to model what the gripper would do once actuated, so I had more accurate results.</p>
-          </Card>
-
+          <Row className={theme.content}>
+            <Col xs={9}>
+              <Content />
+            </Col>
+          </Row>
         </Container>
       </div>
     )

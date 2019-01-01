@@ -1,0 +1,26 @@
+@import "../ProjectPages.scss";
+
+.bg {
+  padding-top: 7rem;
+  color: white;
+  background-image: linear-gradient(to right, #c94b4b, #4b134f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  h4 {
+    text-align: center;
+    opacity: 0.8;
+  }
+}
+
+.overview_image {
+  height: 300px;
+  justify-self: center;
+}
+
+.content {
+  @extend .content;
+
+  iframe {
+    height: 0px;
+    width: 350px;
+  }
+}

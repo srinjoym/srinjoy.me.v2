@@ -19,8 +19,24 @@
   }
 }
 .title{
-  padding: 1.4rem 1.4rem 0.5em !important;
+  padding: 1.4rem 1.4rem 0.2em !important;
   h5{
     font-weight: 600 !important;
   }
+}
+
+.categories_container{
+  margin-left: 1.4rem;
+}
+
+.action_button {
+  font-family: "Lato", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 600;
+}
+
+.chip {
+  // background-color: #24b47e;
+  // color: white;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
 }

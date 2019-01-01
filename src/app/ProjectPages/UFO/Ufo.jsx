@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-flexbox-grid/lib/'
-import theme from '../Robot.scss'
+import theme from '../ProjectPages.scss'
 import Card from 'react-toolbox/lib/card'
 import Container from '../../Shared/Container/Container.jsx'
 

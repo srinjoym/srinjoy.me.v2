@@ -15,14 +15,30 @@ p, li {
 }
 
 
-// :global {
-//   h1, h2, h3, h4,p {
-//     font-family: "Karla", "Helvetica", "Arial", sans-serif !important;
-//   }
-// }
+:global {
+  h1, h2, h3, h4{
+    font-family: "Lato", "Helvetica", "Arial", sans-serif !important;
+  }
+  h1 {
+    font-weight: 700;
+  }
+  h2 {
+    font-weight: 700;
+  }
+  h3 {
+    font-weight: 700;
+  }
+  h4 {
+    font-weight: 600;
+  }
+}
 
 :global {
   .serif {
     font-family: "Vollkorn", "serif";
+  }
+
+  .sans {
+    font-family: "Lato", "Helvetica", "Arial", sans-serif !important;
   }
 }

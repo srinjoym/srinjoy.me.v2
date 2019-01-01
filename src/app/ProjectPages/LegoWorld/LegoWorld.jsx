@@ -6,10 +6,6 @@ import Container from '../../Shared/Container/Container.jsx'
 import Content from './LegoWorld.md'
 
 class LegoWorld extends React.Component {
-  Image (src) {
-    return <img src={require(src)}/>;
-  }
-
   render () {
     return (
       <div className={theme.legoworld}>
