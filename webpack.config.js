@@ -44,6 +44,12 @@ module.exports = {
       {
         test: /\.json$/,
         loader: 'json-loader'
+      },
+      {
+        test: /\.md$/,
+        loaders: [
+          '@mapbox/jsxtreme-markdown-loader'
+        ]
       }
     ]
   },

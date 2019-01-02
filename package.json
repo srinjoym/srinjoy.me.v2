@@ -20,7 +20,7 @@
     "toolbox"
   ],
   "scripts": {
-    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config",
+    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config -p",
     "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
     "start": "node server",
     "test": "jest",
@@ -58,8 +58,8 @@
     "jest": "^21.2.1",
     "json-loader": "^0.5.7",
     "node-sass": "~3.8.0",
-    "postcss-loader": "~0.10.1",
     "normalize.css": "~4.2.0",
+    "postcss-loader": "~0.10.1",
     "react": "~15.3.0",
     "react-addons-css-transition-group": "15.2.0",
     "react-addons-update": "~15.3.0",
@@ -79,7 +79,9 @@
     "webpack-hot-middleware": "~2.12.2"
   },
   "dependencies": {
+    "@mapbox/jsxtreme-markdown-loader": "^0.8.3",
     "history": "^3.0.0",
+    "primer-utilities": "^4.14.1",
     "prop-types": "15.5.10",
     "react-ga": "^2.2.0",
     "react-scrollchor": "^2.2.0",

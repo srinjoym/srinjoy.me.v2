@@ -1,0 +1,26 @@
+.black{
+  color:black;
+  text-align: left;
+}
+.footer{
+  padding-top:2em;
+  padding-bottom: 2em;
+  background-color: #fafafa;
+  border-top: 1px solid #dbdde0;
+}
+
+.list{
+  list-style-type: none;
+  >li{
+    float: right;
+    >a{
+      >svg{
+        width: 5rem;
+        height: 5rem;
+        margin: 1em;
+        fill: black;
+      }
+
+    }
+  }
+}
