@@ -20,7 +20,7 @@ class MonkeyPython extends React.Component {
                 <p className="mt-2">
                 I served as the Co-President of our robotics team in my final year of high school. In addition to
                 managing day to day operations, I helped build our robot Monkey Python for the 2016 FRC game Stronghold.
-                The robots purpose was to shoot foam dodge balls (known as boulders) into goals and cross various types
+                The robot's purpose was to shoot foam dodgeballs (known as boulders) into goals and cross various types
                 of rough terrain challenges. I oversaw the overall design of the robot and designed the robots boulder
                 intake mechanism.
                 </p>
