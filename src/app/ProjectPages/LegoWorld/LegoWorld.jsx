@@ -1,11 +1,24 @@
 import React from 'react'
 import { Row, Col } from 'react-flexbox-grid/lib/'
+import Button from 'react-toolbox/lib/button'
+import Dialog from 'react-toolbox/lib/dialog'
 
 import theme from './LegoWorld.scss'
 import Container from '../../Shared/Container/Container.jsx'
 import Content from './LegoWorld.md'
 
 class LegoWorld extends React.Component {
+  constructor (props) {
+    super(props)
+    // var scroll_top = $(window).scrollTop();
+    this.state = { active: false }
+    this.handleToggle = this.handleToggle.bind(this)
+  }
+
+  handleToggle () {
+    this.setState({active: !this.state.active})
+  }
+
   render () {
     return (
       <div className={theme.legoworld}>
@@ -26,6 +39,7 @@ class LegoWorld extends React.Component {
               </Col>
               <Col xs={12} sm={3} smOffset={1}>
                 <img className={theme.iphone} src={require('../../../../img/legoworld_plane_white.png')}></img>
+                <Button className={theme.center} label='Watch the Demo Video!' onClick={this.handleToggle} raised secondary/>
               </Col>
             </Row>
           </Container>
@@ -33,11 +47,24 @@ class LegoWorld extends React.Component {
 
         <Container>
           <Row className={theme.content}>
-            <Col xs={9}>
+            <Col xs={12} md={9}>
               <Content />
             </Col>
           </Row>
         </Container>
+
+        <Dialog
+          actions={this.actions}
+          active={this.state.active}
+          onEscKeyDown={this.handleToggle}
+          onOverlayClick={this.handleToggle}
+          type='normal'
+          theme={theme}
+        >
+          <div className = {theme.vidcontainer}>
+            <iframe src="https://www.youtube.com/embed/ET7gPgv2jhI" frameBorder="0" allowFullScreen></iframe>
+          </div>
+        </Dialog>
       </div>
     )
   }

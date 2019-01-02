@@ -12,8 +12,8 @@
 }
 
 .overview_image {
+  @extend .center;
   height: 300px;
-  justify-self: center;
 }
 
 .content {

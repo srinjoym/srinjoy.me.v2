@@ -25,14 +25,26 @@ The final stage of this project was taking the things learned from Stages 1 and 
 
 I first needed 3D models of the Lego sets so I could overlay them as the user built each layer in the app. Thankfully, the [Eurobricks](www.eurobricks.com) community has an excellent archive of Lego Digital Designer models for most major Lego sets. From there, I just had to do some tinkering to split each model into different steps for the user to follow, and then export each into the COLLADA file format.
 
-{{<img src={require('../../../../img/Shanghai.png')}/>}}
-{{<img src={require('../../../../img/London.png')}/>}}
+{{<img src={require('../../../../img/legoworld_cad_models.png')}/>}}
 *Models of the Lego Architecture Sets I used*
 
 {{<br/>}}
 
-This app is built on Apple's ARKit Library which provides several utilities for object detection and tracking. To adds support for a new Lego set to the app, the first step is to scan 3D point clouds of each stage of the model. Unlike keypoint detection in Stage 1, I recorded keypoints on the object from multiple viewpoints so it could be recognized from any angle. After 3D point cloud scans of each stage are saved, any user can now simply point their phone at their unfinished Lego Set and the app will guide the user on where to place the next pieces.
+This app is built on Apple's ARKit Library which provides several utilities for object detection and tracking. To adds support for a new Lego set to the app, the first step is to scan 3D point clouds of each stage of the model. Unlike keypoint detection in Stage 1, I recorded keypoints on the object from multiple viewpoints so it could be recognized from any angle.
 
-{{<br/>}}
+{{<br />}}
 
+After initial testing, I decided to scan two point clouds for each step in the building process. The first scan consisted of the unique key points on the new pieces in this step. The second scan consisted of all of the key points of the set at this current step. With this approach, I was able to accurately detect which step the user was on (based on the first scan) and then track the position of the set using the second scan.
+
+{{<br />}}
+
+After the app detects which step the user is on, it loads the COLLADA file for the next step and anchors in to the correct place on the physical model. This allows the user to clearly see where the next pieces should go instead of having to guess based on the manual.
+
+{{<img src={require('../../../../img/legoworld_anchor_demo.png')}/>}}
+
+*Left: 3D Model of Big Ben anchored, Right: Physical Big Ben Set*
+
+{{<br />}}
+### Awards
+* **Ram's Horn Best Project Award** - UT Austin EE371R, Digital Image Processing
 

@@ -2,8 +2,8 @@
 
 
 .iphone {
+  @extend .center;
   height: 400px;
-  justify-self: center;
   // transform: rotate(-10deg);
 }
 
@@ -20,4 +20,8 @@
     text-align: center;
     opacity: 0.8;
   }
+}
+
+.body {
+  padding: 0;
 }

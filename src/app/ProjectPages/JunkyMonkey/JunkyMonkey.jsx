@@ -32,7 +32,7 @@ class JunkyMonkey extends React.Component {
       </div>
       <Container>
           <Row className={theme.content}>
-            <Col xs={9}>
+            <Col xs={12} md={9}>
               <Content />
             </Col>
           </Row>
