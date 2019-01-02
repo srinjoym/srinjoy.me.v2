@@ -11,7 +11,6 @@ import MonkeyPython from './ProjectPages/MonkeyPython/MonkeyPython.jsx'
 import JunkyMonkey from './ProjectPages/JunkyMonkey/JunkyMonkey.jsx'
 import FunkCannon from './ProjectPages/FunkCannon/FunkCannon.jsx'
 import LegoWorld from './ProjectPages/LegoWorld/LegoWorld.jsx'
-import Ufo from './ProjectPages/UFO/Ufo.jsx'
 import SoftRobot from './ProjectPages/SoftRobot/SoftRobot.jsx'
 
 ReactGA.initialize('UA-56121800-2')
@@ -40,7 +39,6 @@ ReactDOM.render(
       <Route path='/monkeypython' component={MonkeyPython} />
       <Route path='/junkymonkey' component={JunkyMonkey} />
       <Route path='/funkcannon' component={FunkCannon} />
-      <Route path='/ufo' component={Ufo} />
       <Route path='/softrobot' component={SoftRobot} />
       <Route path='/legoworld' component={LegoWorld} />
     </Route>
