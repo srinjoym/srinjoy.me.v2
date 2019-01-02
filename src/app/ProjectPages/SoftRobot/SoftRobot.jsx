@@ -21,8 +21,8 @@ class SoftRobot extends React.Component {
                   <p className="mt-2">
                   I designed a soft pneumatic gripper in my senior year of high school to explore making robots
                   more approachable. The gripper can pick up an object in any orientation as it conforms
-                  to the object’s shape while maintaining a constant grip. Not only is it a better performer that a traditional
-                  two finger gripper, but it also reduces the risk of injury for humans interacting with the robot significantly. 
+                  to the object’s shape while maintaining a constant grip. Not only is it a better performer than a traditional
+                  two-finger gripper, but it also reduces the risk of injury for humans interacting with the robot significantly.
                   I 3D modeled the gripper mold based on pneumatic simulations and molded it using EcoFlex.
                   </p>
                 </Col>

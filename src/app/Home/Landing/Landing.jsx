@@ -30,7 +30,7 @@ class Landing extends React.Component {
           <Row middle='xs'>
             <Col className={theme.maxWidth} xs={11}>
               <h1 className={theme.h1}>Hi! I'm Srinjoy</h1>
-              <h2 className={theme.h2}>Full  <span className="fab fa-stack-overflow"></span>  Developer and  <span className="fas fa-camera-retro"></span>  Researcher</h2>
+              <h2 className={theme.h2}>Full Stack Developer and Computer Vision Researcher</h2>
               <ul className={theme.list}>
                 <li><a href='mailto:srinjoy.majumdar@gmail.com'><EmailIcon /></a></li>
                 <li><a href='https://github.com/srinjoym'><GithubIcon /></a></li>

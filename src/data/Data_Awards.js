@@ -1,5 +1,12 @@
 const awards = [
   {
+    'id': 'ramshorn',
+    'title': 'Ram\'s Horn Best Project Award',
+    'subtitle': 'UT Austin',
+    'image': 'ramshorn_card.png',
+    'text': 'Won the best project award among both undergraduate and graduate students in the UT Austin EE371R Final Competition.'
+  },
+  {
     'id': 'ap_scholar',
     'title': 'AP Scholar with Distinction',
     'subtitle': 'College Board',
