@@ -21,6 +21,7 @@ class CardExpand extends React.Component {
     if (this.props.text) {
       this.setState({ expanded: !this.state.expanded })
     } else if(this.props.link) {
+      this.recordLearnMore()
       browserHistory.push(`/${this.props.link}`)
     }
     ReactGA.event({
