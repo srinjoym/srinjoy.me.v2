@@ -4,7 +4,7 @@ const ProjectsPersonal = [
     'title': 'Lego World',
     'image': 'legoworld_card.png',
     'link': 'legoworld',
-    'categories': ['Mixed Reality', 'Computer Vision']
+    'categories': ['Mixed Reality', 'Computer Vision', 'Swift']
   },
   {
     'id': 'rob_gripper',
