@@ -14,8 +14,10 @@ import Logo from '../Shared/Logo/Logo.jsx'
 class Header extends React.Component {
   constructor (props) {
     super(props)
-    // var scroll_top = $(window).scrollTop();
     this.state = { transparent: true, active: false }
+    this.visible = this.visible.bind(this)
+    this.invisible = this.invisible.bind(this)
+    this.displayMenu = this.displayMenu.bind(this)
   }
   visible () {
     this.setState({ transparent: false })
@@ -29,9 +31,9 @@ class Header extends React.Component {
   render () {
     return (
       <div>
-        <Waypoint onEnter={this.visible.bind(this)} onLeave={this.invisible.bind(this)} />
+        <Waypoint onEnter={this.visible} onLeave={this.invisible} />
 
-        <AppBar fixed flat rightIcon='menu' className={this.state.transparent ? theme.n_trans : theme.trans} onRightIconClick={this.displayMenu.bind(this)}>
+        <AppBar fixed flat rightIcon='menu' className={this.state.transparent ? theme.n_trans : theme.trans} onRightIconClick={this.displayMenu}>
           <Container>
             <Row middle='xs'>
               <Col xs={2}>
@@ -39,7 +41,7 @@ class Header extends React.Component {
               </Col>
               <Col xs={10}>
                 <Navigation className={theme.nav}>
-                  <Button onClick={this.displayMenu.bind(this)} className={this.state.transparent ? theme.black : theme.white} icon='menu' floating mini />
+                  <Button onClick={this.displayMenu} className={this.state.transparent ? theme.black : theme.white} icon='menu' floating mini />
                   <ScrollLink path='https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing' color={this.state.transparent} name='Resume' id='res' link />
                   <ScrollLink path={this.props.path} color={this.state.transparent} name='Awards' id='awards' />
                   <ScrollLink path={this.props.path} color={this.state.transparent} name='Projects' id='projects' />
@@ -58,11 +60,11 @@ class Header extends React.Component {
 
             <h4>Menu</h4>
             <Navigation type='vertical'>
-              <ScrollLink path={this.props.path} color name='About Me' id='about' onClick={this.displayMenu.bind(this)} />
-              <ScrollLink path={this.props.path} color name='Experience' id='experience' onClick={this.displayMenu.bind(this)} />
-              <ScrollLink path={this.props.path} color name='Research' id='research' onClick={this.displayMenu.bind(this)} />
-              <ScrollLink path={this.props.path} color name='Projects' id='projects' onClick={this.displayMenu.bind(this)} />
-              <ScrollLink path={this.props.path} color name='Awards' id='awards' onClick={this.displayMenu.bind(this)} />
+              <ScrollLink path={this.props.path} color name='About Me' id='about' onClick={this.displayMenu} />
+              <ScrollLink path={this.props.path} color name='Experience' id='experience' onClick={this.displayMenu} />
+              <ScrollLink path={this.props.path} color name='Research' id='research' onClick={this.displayMenu} />
+              <ScrollLink path={this.props.path} color name='Projects' id='projects' onClick={this.displayMenu} />
+              <ScrollLink path={this.props.path} color name='Awards' id='awards' onClick={this.displayMenu} />
               <ScrollLink path='https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing' color name='Resume' id='res' link />
             </Navigation>
           </Dialog>
