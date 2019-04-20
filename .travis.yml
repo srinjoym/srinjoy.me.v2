@@ -29,10 +29,10 @@ jobs:
         - provider: surge
           skip_cleanup: true
           project: ./build/
-          domain: https://www.srinjoy.me
+          domain: www.srinjoy.me
         - provider: surge
           skip_cleanup: true
           project: ./build/
-          domain: https://www.dev.srinjoy.me
+          domain: www.dev.srinjoy.me
           on:
             branch: master
