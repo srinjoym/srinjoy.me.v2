@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.prod.js -p",
-    "deploy": "surge --project ./build --domain https://srinjoy.me && surge --project ./build --domain https://www.srinjoy.me",
+    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
     "start": "node server",
     "test": "jest",
     "lint": "eslint ./"
