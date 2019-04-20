@@ -1,6 +1,6 @@
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
-const config = require('./webpack.config')
+const config = require('./webpack.dev.js')
 const internalIp = require('internal-ip')
 const express = require('express')
 const webpack = require('webpack')
