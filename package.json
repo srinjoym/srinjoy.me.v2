@@ -20,8 +20,8 @@
     "toolbox"
   ],
   "scripts": {
-    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config -p",
-    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
+    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.prod.js -p",
+    "deploy": "surge --project ./build --domain https://dev.srinjoy.me && surge --project ./build --domain https://www.dev.srinjoy.me",
     "start": "node server",
     "test": "jest",
     "lint": "eslint ./"
@@ -76,7 +76,8 @@
     "surge": "^0.19.0",
     "webpack": "~1.13.2",
     "webpack-dev-middleware": "~1.6.1",
-    "webpack-hot-middleware": "~2.12.2"
+    "webpack-hot-middleware": "~2.12.2",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "@mapbox/jsxtreme-markdown-loader": "^0.8.3",
@@ -85,6 +86,7 @@
     "prop-types": "15.5.10",
     "react-ga": "^2.2.0",
     "react-scrollchor": "^2.2.0",
-    "react-waypoint": "^5.0.3"
+    "react-waypoint": "^5.0.3",
+    "uglifyjs-webpack-plugin": "^2.1.2"
   }
 }
