@@ -26,13 +26,9 @@ jobs:
       stage: deploy
       script: npm run build
       deploy:
-        - provider: surge
+        - provider: pages
           skip_cleanup: true
-          project: ./build/
-          domain: www.srinjoy.me
-        - provider: surge
-          skip_cleanup: true
-          project: ./build/
-          domain: www.dev.srinjoy.me
+          github_token: $GITHUB_TOKEN
+          keep_history: true
           on:
             branch: master

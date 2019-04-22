@@ -33,7 +33,7 @@ function hashLinkScroll () {
 
 // All routes go through here, using React Router for client side routing
 ReactDOM.render(
-  <Router history={browserHistory} onUpdate={hashLinkScroll} render={applyRouterMiddleware(useScroll())}>
+  <Router basename={process.env.PUBLIC_URL} history={browserHistory} onUpdate={hashLinkScroll} render={applyRouterMiddleware(useScroll())}>
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
       <Route path='/monkeypython' component={MonkeyPython} />
