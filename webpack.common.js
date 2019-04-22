@@ -7,13 +7,12 @@ module.exports = {
   context: __dirname,
   devtool: 'inline-source-map',
   entry: [
-    'webpack-hot-middleware/client',
-    './src/app/client.js'
+    './src/app/client.js',
+    'webpack-hot-middleware/client'
   ],
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    filename: 'bundle.js'
   },
   resolve: {
     extensions: ['', '.scss', '.css', '.js', '.json', '.jsx', '.svg'],
@@ -59,9 +58,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: '200.html',
+      filename: '404.html',
       template: './src/www/index.html'
     }),
-    new ExtractTextPlugin('bundle.css', { allChunks: true })
+    new ExtractTextPlugin('bundle.css', { allChunks: true }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
   ]
 }

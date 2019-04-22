@@ -21,7 +21,8 @@
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.prod.js -p",
-    "deploy": "surge --project ./build --domain srinjoy.me && surge --project ./build --domain www.srinjoy.me",
+    "predeploy": "yarn build && cp CNAME ./build",
+    "deploy": "gh-pages -d build",
     "start": "node server",
     "test": "jest",
     "lint": "eslint ./"
@@ -81,6 +82,7 @@
   },
   "dependencies": {
     "@mapbox/jsxtreme-markdown-loader": "^0.8.3",
+    "gh-pages": "^2.0.1",
     "history": "^3.0.0",
     "primer-utilities": "^4.14.1",
     "prop-types": "15.5.10",
