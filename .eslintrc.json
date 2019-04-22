@@ -1,0 +1,16 @@
+{
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "standard",
+        "promise",
+        "react"
+    ],
+    "settings": {
+        "react": {
+          "version": "15.3.0"
+        }
+      }
+}

@@ -1,0 +1,19 @@
+.b_link{
+  opacity: 1 !important;
+  >a{
+    color:black;
+    font-size: 2rem;
+    margin-right: .25rem;
+    margin-left: .25rem;
+  }
+}
+
+.w_link{
+  opacity: 1 !important;
+  >a{
+    color:white;
+    font-size: 2rem;
+    margin-right: .25rem;
+    margin-left: .25rem;
+  }
+}

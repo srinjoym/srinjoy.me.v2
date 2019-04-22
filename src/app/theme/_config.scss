@@ -1,0 +1,12 @@
+@import "~react-toolbox/lib/colors";
+@import "~react-toolbox/lib/globals";
+
+:global {
+  @import "~primer-support/lib/mixins/layout.scss";
+  @import "~primer-support/lib/variables/layout.scss";
+  @import "~primer-utilities/lib/margin.scss";
+  @import "~primer-utilities/lib/padding.scss";
+}
+
+$color-primary: #24b47e;
+$color-primary-dark: $palette-blue-700;
