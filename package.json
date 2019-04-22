@@ -20,8 +20,8 @@
     "toolbox"
   ],
   "scripts": {
-    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.prod.js -p",
-    "predeploy": "yarn build && cp CNAME ./build",
+    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.prod.js -p && cp CNAME ./build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "start": "node server",
     "test": "jest",
