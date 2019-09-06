@@ -3,19 +3,11 @@
   justify-content: center;
 }
 
-.serif {
-  font-family: "Vollkorn", "serif";
-}
-
 .brick {
   height: 200px;
 }
 
 .content {
-  p {
-    @extend .serif;
-  }
-
   h3 {
     @extend .mb-3;
   }
@@ -29,10 +21,6 @@
     max-height: 350px;
     max-width: 100%;
     margin-right: 10px;
-  }
-
-  li {
-    @extend .serif;
   }
 
   ul {
