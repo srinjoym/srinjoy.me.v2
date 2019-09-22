@@ -1,24 +1,24 @@
 const experience = [
   {
     'id': 'sw_intern_github',
-    'title': 'Software Developer Intern',
+    'title': 'Software Engineer',
     'subtitle': 'GitHub',
-    'image': 'professortocat_v2_card.png',
-    'text': 'Working on GitHub Classroom and Classroom Desktop! GitHub Classroom makes it easy for teachers to distribute starter code and collect results for programmming assignments.'
+    'image': 'github-logo.png',
+    'text': 'I\'ve been working at GitHub for the past year as both a summer intern and part-time engineer during the school year. I work primarily with Ruby on Rails and Javascript to develop new features and applications. I\'ve also helped design new systems to alleviate various scaling issues for our most active customers.'
+  },
+  {
+    'id': 'ug_researcher',
+    'title': 'Human-Robot Interaction Researcher',
+    'subtitle': 'University of Texas at Austin',
+    'image': 'Pearl_card.png',
+    'text': 'I\'ve been working under Dr. Scott Niekum and Dr. Andrea Thomaz for the past three years in Computer Vision research at UT Austin. I\'ve developed software infrastructure for custom humanoid robots using the ROS Framework. I\'m currently researching novel Gaze tracking and 6DOF Object tracking algorithms.'
   },
   {
     'id': 'sw_intern_datos',
     'title': 'Software Developer Intern',
-    'subtitle': 'Datos IO',
+    'subtitle': 'Rubrik - Datos IO',
     'image': 'datos_card.png',
     'text': 'Designed and developed backup solution in Python for petabyte scale Hadoop clusters, took project from inception to POC ready.Primary contributor to UI design and fixes in Angular JS for RecoverX 2.0 product.'
-  },
-  {
-    'id': 'ug_researcher',
-    'title': 'Undergraduate Researcher',
-    'subtitle': 'PeARL Lab',
-    'image': 'Pearl_card.png',
-    'text': 'Working under Scott Niekum to program robots in UT Austin Computer Science Artificial Intelligence Lab. Using ROS and Python to program 6DOF Jaco Arm to collect various data sets for machine learning research.'
   },
   {
     'id': 'sw_intern_atsa',
