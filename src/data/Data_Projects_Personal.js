@@ -7,6 +7,15 @@ const ProjectsPersonal = [
     'categories': ['Mixed Reality', 'Computer Vision', 'Swift']
   },
   {
+    'id': 'classroom_assistant',
+    'title': 'GitHub Classroom Assistant',
+    'image': 'classroom-logo.png',
+    'text': 'GitHub Classroom Assistant is an open-source desktop application that I built using ReactJS and Electron. This app is used by teachers to automate grading of student assignments on GitHub and has been downloaded over 65,000 times!',
+    'categories': ['Electron JS', 'React JS'],
+    'link': 'https://edscoop.com/github-launches-classroom-assistant-to-streamline-code-grading/',
+    'ext': true
+  },
+  {
     'id': 'rob_gripper',
     'title': 'Robot Gripper',
     'image': 'base_card.png',
