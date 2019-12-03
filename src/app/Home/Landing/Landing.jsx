@@ -2,7 +2,6 @@ import React from 'react'
 import { Row, Col } from 'react-flexbox-grid/lib/'
 import ReactGA from 'react-ga'
 import Link from 'react-toolbox/lib/link'
-import ReactDipper from 'react-dipper'
 import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 
 import theme from './Landing.scss'
@@ -21,9 +20,6 @@ class Landing extends React.Component {
   render () {
     return (
       <div className={theme.bg}>
-        <div className={theme.particles}>
-          <ReactDipper particleParams={ParticleConfig} />
-        </div>
         <a id='landing' />
         <section className={theme.section}>
           <Row middle='xs'>
