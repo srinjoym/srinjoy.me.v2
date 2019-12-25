@@ -14,8 +14,33 @@ p, li {
   line-height: 1.25em;
 }
 
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #000;
+  --color-background: #fff;
+  --secondary-bg-color: #dedede;
+  --heading-color: #292922;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #fff;
+    --color-background: #000;
+    --secondary-bg-color: #212121;
+    --primary-fill-color: #45484a;
+    --heading-color: #818cab;
+  }
+}
 
 :global {
+  body {
+    background-color: var(--color-background);
+    color: var(--font-color);
+  }
+
   h1, h2, h3, h4{
     font-family: "Montserrat", "Helvetica", "Arial", sans-serif !important;
   }

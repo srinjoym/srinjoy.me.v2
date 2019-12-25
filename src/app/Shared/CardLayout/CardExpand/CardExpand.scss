@@ -6,13 +6,20 @@
   text-align: left;
 }
 .card{
+  background-color: var(--secondary-bg-color);
   margin: 0 0 2em 0;
   border-radius: 12px;
   transition: box-shadow .2s;
+
   &:hover{
     box-shadow: 0 0 10px rgba(33,33,33,.5);
   }
 }
+
+.cardMedia{
+  background-color: #dedede;
+}
+
 .icon{
   >button{
     float:right;

@@ -6,7 +6,6 @@ import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 
 import theme from './Landing.scss'
 import ScrollLink from '../../Shared/ScrollLink/ScrollLink.jsx'
-import ParticleConfig from './dipper_config.json'
 
 // Landing page with react dipper background
 class Landing extends React.Component {
