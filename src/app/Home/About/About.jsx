@@ -19,12 +19,10 @@ class About extends React.Component {
               </Col>
               <Col xs={12} md={8}>
                 <p className={theme.p}>
-                  I’m interested in solving some of the world’s biggest problems.
-                  To do that, I’m currently in my final year studying Electrical and Computer Engineering at the University
-                  of Texas at Austin. Most recently, I’ve been tackling the issue of quality software programming education 
-                  as a part-time Junior Software Developer at GitHub. I’m also working on solving novel Augmented Reality 
-                  and Human-Robot Interaction problems under Dr. Andrea Thomaz and Dr. Scott Niekum. I grew up in San Jose
-                  California, but I’m hoping I’m able to make people’s lives all over the world better in the future.
+                  I'm a software engineer and computer vision researcher working at Microsoft Cognition in Seattle, WA.
+                  This past year, I graduated from the University of Texas at Austin with a degree in Electrical and Computer Engineering.
+                  While there, I conducted computer vision research in the Human-Robot Interaction domain under Dr. Andrea Thomaz and Dr. Scott Niekum.
+                  Previously, I worked as a full-stack software intern at GitHub developing products in education and social networking.
                 </p>
               </Col>
             </Row>
