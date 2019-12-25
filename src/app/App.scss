@@ -29,8 +29,8 @@ p, li {
     --secondary-color: #818cab;
     --font-color: #fff;
     --color-background: #000;
-    --secondary-bg-color: #171717;
-    --primary-fill-color: #333333;
+    --secondary-bg-color: #111111;
+    --primary-fill-color: #191a1b;
     --heading-color: #818cab;
   }
 }
@@ -41,8 +41,8 @@ p, li {
     color: var(--font-color);
   }
 
-  h1, h2, h3, h4{
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif !important;
+  *{
+    font-family: "Inter", "Helvetica", "Arial", sans-serif !important;
   }
   h1 {
     font-weight: 700;
@@ -55,8 +55,5 @@ p, li {
   }
   h4 {
     font-weight: 600;
-  }
-  *:not(h1, h2, h3, h4) {
-    font-family: "IBM Plex Sans", "Helvetica", "Arial", sans-serif;
   }
 }

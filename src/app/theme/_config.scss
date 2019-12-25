@@ -2,6 +2,7 @@
 @import "~react-toolbox/lib/globals";
 
 :global {
+  @import url('https://rsms.me/inter/inter.css');
   @import "~primer-support/lib/mixins/layout.scss";
   @import "~primer-support/lib/variables/layout.scss";
   @import "~primer-utilities/lib/margin.scss";

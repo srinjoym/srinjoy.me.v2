@@ -1,15 +1,7 @@
-.w_svg {
+.svg {
   padding-top: 6px;
   height: 6rem;
   >g{
-    fill:white;
-  }
-}
-
-.b_svg {
-  padding-top: 6px;
-  height: 6rem;
-  >g{
-    fill:black;
+    fill:var(--font-color);;
   }
 }
