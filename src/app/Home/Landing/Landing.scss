@@ -1,13 +1,12 @@
 
-.section{
+.headerPadding{
   position: relative;
-  > div{
-    min-height: 100vh;
-  }
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .bg{
-  background-image: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
+  // background-image: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
   top:0;
   right:0;
   bottom:0;
@@ -23,16 +22,16 @@
 }
 
 .h1{
-  text-align: center;
-  font-size: 9rem;
+  text-align: left;
+  // font-size: 9rem;
   color: white;
-  font-weight: 600;
+  // font-weight: 600;
 }
-.h2{
-  text-align: center;
-  font-size: 4.5rem;
+.subtitle{
+  text-align: left;
+  font-size: 2.5rem;
   color: white;
-  font-weight: 500;
+  // font-weight: 500;
 }
 
 @media (max-width: $layout-breakpoint-sm) {
