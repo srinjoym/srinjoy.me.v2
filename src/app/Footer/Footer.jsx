@@ -12,7 +12,7 @@ class Footer extends React.Component {
         <Container>
           <Row middle='xs'>
             <Col xs={12} md={6}>
-              <h2 className={theme.black}>{"Let's get in touch!"}</h2>
+              <h2>{"Let's get in touch!"}</h2>
             </Col>
             <Col xs={12} md={6}>
               <ul className={theme.list}>

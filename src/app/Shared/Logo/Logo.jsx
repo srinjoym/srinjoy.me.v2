@@ -4,7 +4,7 @@ import theme from './Logo.scss'
 class Logo extends React.Component {
   render () {
     return (
-      <svg className={this.props.transparent ? theme.b_svg : theme.w_svg} viewBox='0 0 173.000000 238.000000'>
+      <svg className={this.props.isDark ? theme.dark : theme.light} viewBox='0 0 173.000000 238.000000'>
         <g transform='translate(0.000000,238.000000) scale(0.100000,-0.100000)'
           fill='#000000' stroke='none'>
           <path d='M485 1998 c-214 -165 -390 -306 -390 -313 0 -7 300 -243 668 -525
@@ -27,7 +27,7 @@ class Logo extends React.Component {
 }
 
 Logo.propTypes = {
-  transparent: PropTypes.bool
+  isDark: Boolean
 }
 
 export default Logo

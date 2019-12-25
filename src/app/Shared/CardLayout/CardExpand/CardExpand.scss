@@ -6,13 +6,27 @@
   text-align: left;
 }
 .card{
+  background-color: var(--primary-fill-color);
+
   margin: 0 0 2em 0;
   border-radius: 12px;
-  transition: box-shadow .3s;
+  transition: box-shadow .2s;
+
   &:hover{
-    box-shadow: 0 0 20px rgba(33,33,33,.5);
+    box-shadow: 0 0 10px rgba(33,33,33,.5);
   }
 }
+
+.cardMedia{
+  background-color: var(--primary-fill-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .cardMedia{
+    background-color: rgba(255,255,255,.9);
+  }
+}
+
 .icon{
   >button{
     float:right;
@@ -21,7 +35,6 @@
 .title{
   padding: 1.4rem 1.4rem !important;
   h5 {
-    font-family: "IBM Plex Sans", "Helvetica", "Arial", sans-serif !important;
     font-weight: 600 !important;
   }
 }
@@ -31,13 +44,12 @@
 }
 
 .action_button {
-  font-family: "IBM Plex Sans", "Helvetica", "Arial", sans-serif !important;
+  color: var(--font-color) !important;
   font-weight: 600;
 }
 
 .chip {
-  // background-color: #24b47e;
-  // color: white;
+  background-color: var(--secondary-fill-color);
   margin-right: 0.5em;
   margin-top: 0.5em;
 }

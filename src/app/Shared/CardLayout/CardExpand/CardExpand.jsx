@@ -4,6 +4,7 @@ import { browserHistory, Link } from 'react-router';
 import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card'
 import { Row, Col } from 'react-flexbox-grid/lib/'
 import Chip from 'react-toolbox/lib/chip'
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 
 import theme from './CardExpand.scss'
 import ReactGA from 'react-ga'
@@ -42,14 +43,14 @@ class CardExpand extends React.Component {
   render () {
     return (
       <Card onClick={this.toggleExpandState.bind(this)} className={theme.card}>
-        <CardMedia aspectRatio={this.props.wide ? 'wide' : 'square'} image={this.props.image} />
+        <CardMedia className={theme.cardMedia} aspectRatio={this.props.wide ? 'wide' : 'square'} image={this.props.image} />
         <Row className={theme.row} middle='xs'>
           <Col xs={10}>
             <CardTitle className={theme.title} title={this.props.title} subtitle={this.props.subtitle} />
           </Col>
           {this.props.text &&
           <Col className={theme.icon} xs={2}>
-            <IconButton icon={this.state.expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'} primary />
+            <IconButton icon={this.state.expanded ? <FaAngleUp /> : <FaAngleDown /> } primary />
           </Col>
           }
           {this.props.categories &&

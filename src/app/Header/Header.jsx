@@ -36,10 +36,12 @@ class Header extends React.Component {
         <AppBar fixed flat rightIcon='menu' className={this.state.transparent ? theme.n_trans : theme.trans} onRightIconClick={this.displayMenu}>
           <Container>
             <Row middle='xs'>
-              <Col xs={2}>
-                <ScrollLink path={this.props.path} color={this.state.transparent} id='landing'><Logo transparent={this.state.transparent} /></ScrollLink>
+              <Col xs={3}>
+                <ScrollLink path={this.props.path} color={this.state.transparent} id='landing'>
+                  <Logo isDark={this.state.transparent} />
+                </ScrollLink>
               </Col>
-              <Col xs={10}>
+              <Col xs={9}>
                 <Navigation className={theme.nav}>
                   <Button onClick={this.displayMenu} className={this.state.transparent ? theme.black : theme.white} icon='menu' floating mini />
                   <ScrollLink path='https://drive.google.com/file/d/0B3RGMraz9IZlNi1WZ0ZJU01fdTA/view?usp=sharing' color={this.state.transparent} name='Resume' id='res' link />

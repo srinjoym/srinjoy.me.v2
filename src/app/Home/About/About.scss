@@ -16,6 +16,12 @@
   }
 }
 .cardOv{
+  background-color: var(--primary-fill-color);
+  // -webkit-box-shadow: none;
+	// -moz-box-shadow: none;
+  // box-shadow: none;
+
+  border-radius: 12px;
 
   >div,img{
     padding: 2rem;
