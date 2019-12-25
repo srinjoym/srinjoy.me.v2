@@ -1,7 +1,7 @@
 .b_link{
   opacity: 1 !important;
   >a{
-    color: var(--font-color);
+    color: black;
     font-size: 2rem;
     margin-right: .25rem;
     margin-left: .25rem;
@@ -11,9 +11,21 @@
 .w_link{
   opacity: 1 !important;
   >a{
-    color:var(--font-color);
+    color: white;
     font-size: 2rem;
     margin-right: .25rem;
     margin-left: .25rem;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .b_link{
+    opacity: 1 !important;
+    >a{
+      color: white;
+      font-size: 2rem;
+      margin-right: .25rem;
+      margin-left: .25rem;
+    }
   }
 }

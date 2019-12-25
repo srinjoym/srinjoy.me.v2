@@ -38,7 +38,7 @@ class Header extends React.Component {
             <Row middle='xs'>
               <Col xs={3}>
                 <ScrollLink path={this.props.path} color={this.state.transparent} id='landing'>
-                  <Logo />
+                  <Logo isDark={this.state.transparent} />
                 </ScrollLink>
               </Col>
               <Col xs={9}>

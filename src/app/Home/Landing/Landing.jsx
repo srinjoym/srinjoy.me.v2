@@ -22,9 +22,9 @@ class Landing extends React.Component {
         <div className={theme.headerPadding}>
           <Container id='landing'>
             <h1 className={theme.h1}>Hi! I'm Srinjoy</h1>
-            <span className={theme.subtitle}>I'm a Full Stack Developer and Computer Vision Researcher</span>
+            <span className={theme.subtitle}>I'm a Software Engineer and Computer Vision Researcher</span>
             <ul className={theme.list}>
-              <li><a href='mailto:srinjoy.majumdar@gmail.com'><FaEnvelope /></a></li>
+              <li><a href='mailto:srinjoy.majumdar@gmail.com'><FaEnvelope style={{marginLeft: "0px"}}/></a></li>
               <li><a href='https://github.com/srinjoym'><FaGithub /></a></li>
               <li><a href='http://www.linkedin.com/pub/srinjoy-majumdar/75/913/345/'><FaLinkedin /></a></li>
               <li><a href='https://twitter.com/SrinjoyMajumdar'><FaTwitter /></a></li>

@@ -1,7 +1,26 @@
-.svg {
+.light {
   padding-top: 6px;
   height: 6rem;
   >g{
-    fill:var(--font-color);;
+    fill: white;
+  }
+}
+
+.dark {
+  padding-top: 6px;
+  height: 6rem;
+  >g{
+    fill: black;
+  }
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+  .dark {
+    padding-top: 6px;
+    height: 6rem;
+    >g{
+      fill: white;
+    }
   }
 }

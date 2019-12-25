@@ -12,7 +12,8 @@ class About extends React.Component {
       <div className={theme.bg}>
         <Container id='about'>
           <Card className={theme.cardOv}>
-            <h2>Who Am I?</h2>
+            <h2>About Me</h2>
+
             <Row middle='xs' center='xs'>
               <Col xs={12} md={4}>
                 <img className={theme.img} src={require('../../../../img/prof.jpg')} />

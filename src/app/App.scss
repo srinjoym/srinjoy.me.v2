@@ -18,8 +18,10 @@ p, li {
   --primary-color: #302AE6;
   --secondary-color: #536390;
   --font-color: #000;
-  --color-background: #fff;
-  --secondary-bg-color: #dedede;
+  --color-background: rgb(249, 250, 252);
+  --secondary-bg-color: rgb(247, 247, 247);
+  --primary-fill-color: #fff;
+  --secondary-fill-color: rgb(230, 230, 230);
   --heading-color: #292922;
 }
 
@@ -31,6 +33,7 @@ p, li {
     --color-background: #000;
     --secondary-bg-color: #111111;
     --primary-fill-color: #191a1b;
+    --secondary-fill-color: #303235;
     --heading-color: #818cab;
   }
 }
@@ -41,19 +44,24 @@ p, li {
     color: var(--font-color);
   }
 
-  *{
+  h1, h2, h3, h4, h5, h6, p {
     font-family: "Inter", "Helvetica", "Arial", sans-serif !important;
   }
+
   h1 {
     font-weight: 700;
+    text-align: left;
   }
   h2 {
     font-weight: 600;
+    text-align: left;
   }
   h3 {
     font-weight: 600;
+    text-align: left;
   }
   h4 {
     font-weight: 600;
+    text-align: left;
   }
 }
