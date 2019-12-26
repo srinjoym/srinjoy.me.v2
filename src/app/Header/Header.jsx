@@ -55,6 +55,7 @@ class Header extends React.Component {
             </Row>
           </Container>
           <Dialog
+            className={theme.dialog}
             active={this.state.active}
             onEscKeyDown={this.displayMenu}
             onOverlayClick={this.displayMenu}
